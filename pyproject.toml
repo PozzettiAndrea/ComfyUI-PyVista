@@ -1,0 +1,23 @@
+[project]
+name = "comfyui-pyvista"
+description = "PyVista geometry processing nodes for ComfyUI — mesh analysis, filtering, boolean ops, remeshing, visualization, and 30+ format I/O via meshio."
+version = "0.1.0"
+license = {text = "GPL-3.0-or-later"}
+requires-python = ">=3.10"
+dependencies = [
+    "pyvista>=0.43.0",
+    "meshio>=5.2",
+    "numpy",
+    "scipy>=1.7.0",
+    "trimesh[easy]>=4.0.0",
+    "comfy-3d-viewers",
+]
+
+[project.urls]
+Repository = "https://github.com/PozzettiAndrea/comfyui-pyvista"
+
+[tool.comfy]
+PublisherId = "pznodes"
+DisplayName = "PyVista"
+Icon = ""
+web = "web"

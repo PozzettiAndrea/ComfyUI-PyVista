@@ -1,0 +1,9 @@
+pyvista>=0.43.0
+meshio>=5.2
+numpy
+scipy>=1.7.0
+trimesh[easy]>=4.0.0
+comfy-3d-viewers==0.2.41
+trame>=3.6.0
+trame-vtk>=2.8.0
+trame-vuetify>=3.0.0
