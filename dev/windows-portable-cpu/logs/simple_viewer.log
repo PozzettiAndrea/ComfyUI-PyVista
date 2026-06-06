@@ -1,0 +1,112 @@
+Capturing execution frames: simple_viewer.json
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  Frame 1 saved (frame_000.jpg, t=0.0s)
+  Validating workflow...
+  Queuing workflow for execution...
+  [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+  [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+  [ComfyUI] [32m[INFO][0m Prompt has 2 nodes
+  [ComfyUI] [32m[INFO][0m   Node 1: PyVistaLoadMeshio
+  [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
+  [ComfyUI] [32m[INFO][0m   Node 7: PyVistaPreview
+  [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "fields", "preview_pyvista": "{\"show_edges\":false,\"camera_state\":\"\",\"camera_position\":\"{\\\"centerOfRotation\\\":[896.9955291748047,676.0221252441406,132.19440269470215],\\\"position
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: ae18d0a3-c166-47ef-98ad-6e68bbc4ccf6
+  [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+  [ComfyUI] [32m[INFO][0m Validation result: valid=True
+  [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+  [ComfyUI] [32m[INFO][0m got prompt
+  [ComfyUI] [32m[INFO][0m Loading D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\ComfyUI\input\3d/airplane.ply (format=auto)
+  [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
+  [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
+  [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
+  [ComfyUI] 2026-06-06 23:52:32.124 ( 127.647s) [F68AB07EB1A5D168]vtkWin32OpenGLRenderWin:656    ERR| vtkWin32OpenGLRenderWindow (0000024CD2CA4B80): failed to get wglChoosePixelFormatARB
+  [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PyVista\nodes\visualization\preview.py:55: PyVistaFutureWarning: The default value of `algorithm` for the filter
+  [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
+  [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
+  [ComfyUI] silence this warning.
+  [ComfyUI]   surf = pyvista_geom.extract_surface()
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 656
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000024CD2CA4B80): failed to get wglChoosePixelFormatARB
+  [ComfyUI] 2026-06-06 23:52:32.125 ( 127.648s) [F68AB07EB1A5D168]vtkWin32OpenGLRenderWin:731    ERR| vtkWin32OpenGLRenderWindow (0000024CD2CA4B80): failed to get valid pixel format.
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 731
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000024CD2CA4B80): failed to get valid pixel format.
+  [ComfyUI] 2026-06-06 23:52:32.126 ( 127.649s) [F68AB07EB1A5D168]vtkOpenGLRenderWindow.c:919   WARN| vtkWin32OpenGLRenderWindow (0000024CD2CA4B80): Failed to initialize OpenGL functions!
+  [ComfyUI] 2026-06-06 23:52:32.130 ( 127.653s) [F68AB07EB1A5D168]vtkOSOpenGLRenderWindow:134   WARN| osmesa.dll not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library. You can obtain pre-built binaries for Windows from https://github.com/pal1000/mesa-dist-win. Ensure that osmesa.dll is available in PATH.
+  [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\ComfyUI\custom_nodes\ComfyUI-PyVista\nodes\visualization\trame_manager.py:468: PyVistaFutureWarning: The default value of `algorithm` for the filter
+  [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
+  [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
+  [ComfyUI] silence this warning.
+  [ComfyUI]   surf = mesh.extract_surface()
+  [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.09 seconds[0m
+  Node executed (2 total), capturing...
+  Frame 2 saved (frame_001.jpg, t=0.7s)
+  [capture-node] freeze=8ms shot=511ms unfreeze=0ms saved=True
+  Execution complete (t=0.7s)
+  Captured 2 unique frames over 1.47s
+  [debug] iframes: 1
+  [debug]   iframe[0]: src=http://127.0.0.1:41892/trame/index.html?ui=pv_7&reconnect=auto, canvas=486x490, rafFrozen=True
+  [timing] trigger_3d_previews: 0.0s
+  [ComfyUI] [1m[31m[ERROR][0m Exception raised
+  [ComfyUI] [1m[31m[ERROR][0m AttributeError("'Renderer' object has no attribute '_actors'")
+  [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\wslink\protocol.py", line 317, in onCompleteMessage
+  [ComfyUI]     results = func(*args, **kwargs)
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\protocol.py", line 246, in update_state
+  [ComfyUI]     with self.server.state:
+  [ComfyUI]          ^^^^^^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\state.py", line 469, in __exit__
+  [ComfyUI]     self.flush()
+  [ComfyUI]     ~~~~~~~~~~^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\state.py", line 454, in flush
+  [ComfyUI]     keys |= self._flush_pending_keys()
+  [ComfyUI]             ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\state.py", line 434, in _flush_pending_keys
+  [ComfyUI]     coroutine = callback(**reverse_translated_state)
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\trame\ui\base_viewer.py", line 178, in on_edge_visibility_change
+  [ComfyUI]     for actor in renderer.actors.values():
+  [ComfyUI]                  ^^^^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\core\_vtk_utilities.py", line 146, in __getattribute__
+  [ComfyUI]     return object.__getattribute__(self, item)
+  [ComfyUI]            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\plotting\renderer.py", line 996, in actors
+  [ComfyUI]     return dict(self._actors.items())
+  [ComfyUI]                 ^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\core\_vtk_utilities.py", line 146, in __getattribute__
+  [ComfyUI]     return object.__getattribute__(self, item)
+  [ComfyUI]            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  [ComfyUI] AttributeError: 'Renderer' object has no attribute '_actors'. Did you mean: 'actors'?
+  [ComfyUI] 
+  [ComfyUI] [1m[31m[ERROR][0m Exception raised
+  [ComfyUI] [1m[31m[ERROR][0m AttributeError("'Renderer' object has no attribute '_actors'")
+  [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\wslink\protocol.py", line 317, in onCompleteMessage
+  [ComfyUI]     results = func(*args, **kwargs)
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\protocol.py", line 246, in update_state
+  [ComfyUI]     with self.server.state:
+  [ComfyUI]          ^^^^^^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\state.py", line 469, in __exit__
+  [ComfyUI]     self.flush()
+  [ComfyUI]     ~~~~~~~~~~^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\state.py", line 454, in flush
+  [ComfyUI]     keys |= self._flush_pending_keys()
+  [ComfyUI]             ~~~~~~~~~~~~~~~~~~~~~~~~^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\trame_server\state.py", line 434, in _flush_pending_keys
+  [ComfyUI]     coroutine = callback(**reverse_translated_state)
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\trame\ui\base_viewer.py", line 178, in on_edge_visibility_change
+  [ComfyUI]     for actor in renderer.actors.values():
+  [ComfyUI]                  ^^^^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\core\_vtk_utilities.py", line 146, in __getattribute__
+  [ComfyUI]     return object.__getattribute__(self, item)
+  [ComfyUI]            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\plotting\renderer.py", line 996, in actors
+  [ComfyUI]     return dict(self._actors.items())
+  [ComfyUI]                 ^^^^^^^^^^^^
+  [ComfyUI]   File "D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\portable-comfyui\ComfyUI_windows_portable\python_embeded\Lib\site-packages\pyvista\core\_vtk_utilities.py", line 146, in __getattribute__
+  [ComfyUI]     return object.__getattribute__(self, item)
+  [ComfyUI]            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  [ComfyUI] AttributeError: 'Renderer' object has no attribute '_actors'. Did you mean: 'actors'?
+  [ComfyUI] 
+  Saved high-quality screenshot: simple_viewer_executed.png
+  [timing] final_screenshot: 0.5s
+    Captured 3 video frames

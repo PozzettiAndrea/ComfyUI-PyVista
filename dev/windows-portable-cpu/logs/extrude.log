@@ -1,0 +1,48 @@
+Capturing execution frames: extrude.json
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  Frame 1 saved (frame_000.jpg, t=0.0s)
+  Validating workflow...
+  Queuing workflow for execution...
+  [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+  [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+  [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+  [ComfyUI] [32m[INFO][0m   Node 1: PyVistaExtrude
+  [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "rotate", "mode.angle": 160, "mode.resolution": 32, "mode.rotation_axis": "y", "mode.translation": 0, "mode.dradius": 0, "mode.capping": false, "pyvista_geom": ["3", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 3: PyVistaCreatePrimitive
+  [ComfyUI] [32m[INFO][0m     Inputs: {"shape": "Plane", "radius": 1, "height": 1, "resolution": 32, "center_x": 0, "center_y": 0, "center_z": 0}
+  [ComfyUI] [32m[INFO][0m   Node 5: PyVistaCreatePlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+  [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 0.5, "show_edges": true, "line_width": 1, "point_size": 5, "plotter": ["5", 0], "pyvista_geom": ["3", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": true, "line_width": 5, "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 3c833f62-e3c1-42ec-b26c-a9601daadc58
+  [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+  [ComfyUI] [32m[INFO][0m Validation result: valid=True
+  [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+  [ComfyUI] [32m[INFO][0m got prompt
+  [ComfyUI] 2026-06-06 23:51:49.256 (  84.779s) [F68AB07EB1A5D168]vtkWin32OpenGLRenderWin:656    ERR| vtkWin32OpenGLRenderWindow (0000024CD2CA1B90): failed to get wglChoosePixelFormatARB
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 656
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000024CD2CA1B90): failed to get wglChoosePixelFormatARB
+  [ComfyUI] 2026-06-06 23:51:49.259 (  84.783s) [F68AB07EB1A5D168]vtkWin32OpenGLRenderWin:731    ERR| vtkWin32OpenGLRenderWindow (0000024CD2CA1B90): failed to get valid pixel format.
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 731
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000024CD2CA1B90): failed to get valid pixel format.
+  [ComfyUI] 2026-06-06 23:51:49.260 (  84.784s) [F68AB07EB1A5D168]vtkOpenGLRenderWindow.c:919   WARN| vtkWin32OpenGLRenderWindow (0000024CD2CA1B90): Failed to initialize OpenGL functions!
+  [ComfyUI] 2026-06-06 23:51:49.264 (  84.787s) [F68AB07EB1A5D168]vtkOSOpenGLRenderWindow:134   WARN| osmesa.dll not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library. You can obtain pre-built binaries for Windows from https://github.com/pal1000/mesa-dist-win. Ensure that osmesa.dll is available in PATH.
+  Node executed (5 total), capturing...
+  [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.54 seconds[0m
+  Frame 2 saved (frame_001.jpg, t=0.8s)
+  [capture-node] freeze=6ms shot=315ms unfreeze=6ms saved=True
+  Node executed (6 total), capturing...
+  Frame 3 saved (frame_002.jpg, t=1.4s)
+  [capture-node] freeze=6ms shot=229ms unfreeze=0ms saved=True
+  Execution complete (t=1.4s)
+  Captured 3 unique frames over 1.74s
+  [debug] iframes: 0
+  [timing] trigger_3d_previews: 0.0s
+  Saved high-quality screenshot: extrude_executed.png
+  [timing] final_screenshot: 0.5s
+    Captured 4 video frames
