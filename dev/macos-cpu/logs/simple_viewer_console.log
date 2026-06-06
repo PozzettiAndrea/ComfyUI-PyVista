@@ -15,11 +15,11 @@
 [Console-error] Failed to load resource: the server responded with a status of 405 (Method Not Allowed)
 [Console-info] Vue.use([object Module])
 [Console-info] Vue.use([object Object])
-[Console-log] [SettingsBridge] trame.refs keys: [view_P_0x16be55590_0]
-[Console-log] [SettingsBridge] Initialized. prefix=P_0x16be55590_0_
+[Console-log] [SettingsBridge] trame.refs keys: [view_P_0x154a0da00_0]
+[Console-log] [SettingsBridge] Initialized. prefix=P_0x154a0da00_0_
 [Console-log] [SettingsBridge] state.get available: function
 [Console-log] [SettingsBridge] state.set available: function
-[Console-log] [SettingsBridge] Test read: P_0x16be55590_0_edge_visibility = false
+[Console-log] [SettingsBridge] Test read: P_0x154a0da00_0_edge_visibility = false
 [Console-log] [PyVista] SETTINGS_BRIDGE_READY received
 [Console-log] [PyVista] Sending RESTORE_SETTINGS: {edge_visibility: false, outline_visibility: false, grid_visibility: true, axis_visibility: true, parallel_projection: false}
 [Console-log] [SettingsBridge] Restoring settings: {edge_visibility: false, outline_visibility: false, grid_visibility: true, axis_visibility: true, parallel_projection: false}

@@ -1,6 +1,3 @@
-[Console-log] about to replace template Connection closed
-[Console-log] template replaced <trame-reconnect message="Connection closed"/>
-[Console-log] reconnect auto
 [Console-error] Failed to load resource: the server responded with a status of 404 (Not Found)
 [Console-error] Failed to load resource: the server responded with a status of 404 (Not Found)
 [Console-warning] [ComfyUI] The legacy queue/history menu is deprecated. Core functionality in this menu may break at any time. Issues and feature requests related to the legacy menu will not be addressed. To switch to the new menu: Settings → search "Use new menu" → change from "Disabled" to "Top".

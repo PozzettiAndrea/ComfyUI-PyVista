@@ -18,7 +18,7 @@ Capturing execution frames: clip.json
   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["6", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: d95ab723-3d60-4623-9d40-cdefc2c91283
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 12475efd-37f8-4718-a992-dfec928939f9
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 8:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 5:
