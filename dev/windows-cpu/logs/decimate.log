@@ -1,6 +1,14 @@
   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 Capturing execution frames: decimate.json
   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  [ComfyUI] [1m[31m[ERROR][0m Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+  [ComfyUI] handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+  [ComfyUI] Traceback (most recent call last):
+  [ComfyUI]   File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\asyncio\events.py", line 88, in _run
+  [ComfyUI]     self._context.run(self._callback, *self._args)
+  [ComfyUI]   File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+  [ComfyUI]     self._sock.shutdown(socket.SHUT_RDWR)
+  [ComfyUI] ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
   Frame 1 saved (frame_000.jpg, t=0.0s)
   Validating workflow...
   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
@@ -15,6 +23,7 @@ Capturing execution frames: decimate.json
   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaCreatePlotter
   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
   [ComfyUI] [32m[INFO][0m   Node 11: PyVistaPreviewPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
   Validation failed: Prompt outputs failed validation
 Node errors:
 {
@@ -75,7 +84,7 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-  [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 12: PyVistaDecimate
     Status: FAILED
     Error: Workflow validation failed
     Details: Prompt outputs failed validation
@@ -138,9 +147,8 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-  [ComfyUI] [32m[INFO][0m   Node 12: PyVistaDecimate
   [ComfyUI] [32m[INFO][0m     Inputs: {"method": "decimate", "target_reduction": 0.5, "preserve_topology": true, "feature_angle": 45, "pyvista_geom": ["1", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: 3e0584e1-24c3-4da1-aba3-6b68791c2622
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: b4126006-68b9-4f89-826b-a4b717edb2b5
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 11:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 6:

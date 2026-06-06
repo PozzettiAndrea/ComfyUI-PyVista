@@ -14,15 +14,15 @@ Capturing execution frames: warp.json
   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
+  Warning: 2 node(s) have validation errors (will fail after screenshots)
   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
+  Queuing workflow for execution...
   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["9", 0]}
-  Warning: 2 node(s) have validation errors (will fail after screenshots)
   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaWarp
-  Queuing workflow for execution...
   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "by_vector", "array_name": "Normals", "factor": 1, "pyvista_geom": ["6", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: eeab8a25-2ddb-48f2-ad21-34fb2c05321b
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 4cc439af-9039-4530-930e-e93fdeb70698
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
@@ -40,20 +40,20 @@ Capturing execution frames: warp.json
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-  [ComfyUI] [32m[INFO][0m Loading D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\ComfyUI\input\3d/airplane.ply (format=auto)
+  [ComfyUI] [32m[INFO][0m Loading D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2352\ComfyUI\input\3d/airplane.ply (format=auto)
   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
-  [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.02 seconds[0m
+  [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.04 seconds[0m
   Node executed (2 total), capturing...
-  Frame 2 saved (frame_001.jpg, t=0.7s)
-  [capture-node] freeze=5ms shot=243ms unfreeze=0ms saved=True
-  Execution complete (t=0.7s)
-  Captured 2 unique frames over 0.98s
+  Frame 2 saved (frame_001.jpg, t=0.8s)
+  [capture-node] freeze=5ms shot=300ms unfreeze=0ms saved=True
+  Execution complete (t=0.8s)
+  Captured 2 unique frames over 1.18s
   [debug] iframes: 0
   [timing] trigger_3d_previews: 0.0s
   Saved high-quality screenshot: warp_executed.png
-  [timing] final_screenshot: 0.4s
+  [timing] final_screenshot: 0.5s
     Status: FAILED
     Error: 2 node(s) had validation errors and were silently skipped: node 4: line_width, false, could not convert string to float: 'false'; node 7: line_width, false, could not convert string to float: 'false'
-    Details: Workflow: C:\Users\stduser\AppData\Local\Temp\comfy-test-run-qrsjx84j\ComfyUI-PyVista\workflows\warp.json
+    Details: Workflow: C:\Users\stduser\AppData\Local\Temp\comfy-test-run-tcjnrhph\ComfyUI-PyVista\workflows\warp.json

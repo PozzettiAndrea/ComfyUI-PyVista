@@ -13,9 +13,6 @@ Capturing execution frames: subdivide.json
   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaCreatePlotter
   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
-  [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
-  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["7", 0], "pyvista_geom": ["5", 0]}
   Validation failed: Prompt outputs failed validation
 Node errors:
 {
@@ -76,7 +73,7 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-  [ComfyUI] [32m[INFO][0m   Node 9: PyVistaPreviewPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
     Status: FAILED
     Error: Workflow validation failed
     Details: Prompt outputs failed validation
@@ -139,8 +136,11 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
+  [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["7", 0], "pyvista_geom": ["5", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 9: PyVistaPreviewPlotter
   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: a083ea6e-0cef-445e-810d-28c21bc1d190
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: ab4ecc8a-67af-48e8-9c2a-dba5259529cf
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 9:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:

@@ -1,6 +1,14 @@
   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 Capturing execution frames: connectivity.json
   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  [ComfyUI] [1m[31m[ERROR][0m Exception in callback _ProactorBasePipeTransport._call_connection_lost(None)
+  [ComfyUI] handle: <Handle _ProactorBasePipeTransport._call_connection_lost(None)>
+  [ComfyUI] Traceback (most recent call last):
+  [ComfyUI]   File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\asyncio\events.py", line 88, in _run
+  [ComfyUI]     self._context.run(self._callback, *self._args)
+  [ComfyUI]   File "C:\hostedtoolcache\windows\Python\3.12.10\x64\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+  [ComfyUI]     self._sock.shutdown(socket.SHUT_RDWR)
+  [ComfyUI] ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
   Frame 1 saved (frame_000.jpg, t=0.0s)
   Validating workflow...
   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
@@ -15,9 +23,6 @@ Capturing execution frames: connectivity.json
   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/flower_in_pot.stl", "file_format": "auto"}
   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["10", 0]}
-  [ComfyUI] [32m[INFO][0m   Node 10: PyVistaConnectivity
-  [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "extract_largest", "pyvista_geom": ["5", 0]}
   Validation failed: Prompt outputs failed validation
 Node errors:
 {
@@ -78,7 +83,7 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-  [ComfyUI] [32m[INFO][0m   Node 13: PyVistaConnectivity
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["10", 0]}
     Status: FAILED
     Error: Workflow validation failed
     Details: Prompt outputs failed validation
@@ -141,8 +146,11 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
+  [ComfyUI] [32m[INFO][0m   Node 10: PyVistaConnectivity
+  [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "extract_largest", "pyvista_geom": ["5", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 13: PyVistaConnectivity
   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "label", "pyvista_geom": ["5", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: 28611293-372c-4eb2-b50d-6d08e61d13ee
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: f6ab1fd6-31f9-4fb9-bc03-acd96aa3ac50
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
