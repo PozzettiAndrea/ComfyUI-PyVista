@@ -1,0 +1,72 @@
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+Capturing execution frames: geodesic.json
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  [ComfyUI] [1m[31m[ERROR][0m Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+  [ComfyUI] handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+  [ComfyUI] Traceback (most recent call last):
+  [ComfyUI]   File "C:\hostedtoolcache\windows\Python\3.13.13\x64\Lib\asyncio\events.py", line 89, in _run
+  [ComfyUI]     self._context.run(self._callback, *self._args)
+  [ComfyUI]     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  [ComfyUI]   File "C:\hostedtoolcache\windows\Python\3.13.13\x64\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+  [ComfyUI]     self._sock.shutdown(socket.SHUT_RDWR)
+  [ComfyUI]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  [ComfyUI] ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+  Frame 1 saved (frame_000.jpg, t=0.0s)
+  Validating workflow...
+  [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+  [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+  [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+  [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
+  Queuing workflow for execution...
+  [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x1", "background": "white", "link_views": "false"}
+  [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 0.5, "show_edges": true, "line_width": 1, "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["5", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
+  [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
+  [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "wireframe", "color": "red", "scalars": "", "opacity": 1, "show_edges": false, "line_width": 5, "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["14", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 14: PyVistaGeodesic
+  [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "path", "source_vertex": 0, "target_vertex": 50, "pyvista_geom": ["5", 0]}
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 68e118dc-2d58-44a5-bfda-258da99963fe
+  [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+  [ComfyUI] [32m[INFO][0m Validation result: valid=True
+  [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+  [ComfyUI] [32m[INFO][0m got prompt
+  [ComfyUI] [32m[INFO][0m Loading D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\ComfyUI\input\3d/airplane.ply (format=auto)
+  [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
+  [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
+  [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
+  [ComfyUI] 2026-06-06 23:50:25.975 ( 107.923s) [45D909689546514C]vtkWin32OpenGLRenderWin:656    ERR| vtkWin32OpenGLRenderWindow (0000021ACC641A00): failed to get wglChoosePixelFormatARB
+  [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\ComfyUI\custom_nodes\ComfyUI-PyVista\nodes\spatial\geodesic.py:42: PyVistaFutureWarning: The default value of `algorithm` for the filter
+  [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
+  [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
+  [ComfyUI] silence this warning.
+  [ComfyUI]   pyvista_geom = pyvista_geom.extract_surface()
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 656
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000021ACC641A00): failed to get wglChoosePixelFormatARB
+  [ComfyUI] 2026-06-06 23:50:25.977 ( 107.924s) [45D909689546514C]vtkWin32OpenGLRenderWin:731    ERR| vtkWin32OpenGLRenderWindow (0000021ACC641A00): failed to get valid pixel format.
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 731
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000021ACC641A00): failed to get valid pixel format.
+  [ComfyUI] 2026-06-06 23:50:25.977 ( 107.925s) [45D909689546514C]vtkOpenGLRenderWindow.c:919   WARN| vtkWin32OpenGLRenderWindow (0000021ACC641A00): Failed to initialize OpenGL functions!
+  [ComfyUI] 2026-06-06 23:50:25.980 ( 107.928s) [45D909689546514C]vtkOSOpenGLRenderWindow:134   WARN| osmesa.dll not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library. You can obtain pre-built binaries for Windows from https://github.com/pal1000/mesa-dist-win. Ensure that osmesa.dll is available in PATH.
+  Node executed (1 total), capturing...
+  [ComfyUI] D:\a\comfy-gpu-ci\comfy-gpu-ci\test_workspaces\PyVista-2346\ComfyUI\custom_nodes\ComfyUI-PyVista\nodes\visualization\add_to_plotter.py:67: PyVistaFutureWarning: The default value of `algorithm` for the filter
+  [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
+  [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
+  [ComfyUI] silence this warning.
+  [ComfyUI]   surf = mesh_copy.extract_surface()
+  [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.11 seconds[0m
+  Frame 2 saved (frame_001.jpg, t=0.5s)
+  [capture-node] freeze=3ms shot=230ms unfreeze=5ms saved=True
+  Node executed (6 total), capturing...
+  Frame 3 saved (frame_002.jpg, t=1.1s)
+  [capture-node] freeze=4ms shot=221ms unfreeze=0ms saved=True
+  Execution complete (t=1.1s)
+  Captured 3 unique frames over 1.33s
+  [debug] iframes: 0
+  [timing] trigger_3d_previews: 0.0s
+  Saved high-quality screenshot: geodesic_executed.png
+  [timing] final_screenshot: 0.4s
+    Captured 4 video frames

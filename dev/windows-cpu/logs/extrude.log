@@ -1,0 +1,50 @@
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+Capturing execution frames: extrude.json
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  Frame 1 saved (frame_000.jpg, t=0.0s)
+  Validating workflow...
+  [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+  [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+  [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+  [ComfyUI] [32m[INFO][0m   Node 1: PyVistaExtrude
+  [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "rotate", "mode.angle": 160, "mode.resolution": 32, "mode.rotation_axis": "y", "mode.translation": 0, "mode.dradius": 0, "mode.capping": false, "pyvista_geom": ["3", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 3: PyVistaCreatePrimitive
+  [ComfyUI] [32m[INFO][0m     Inputs: {"shape": "Plane", "radius": 1, "height": 1, "resolution": 32, "center_x": 0, "center_y": 0, "center_z": 0}
+  [ComfyUI] [32m[INFO][0m   Node 5: PyVistaCreatePlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+  [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 0.5, "show_edges": true, "line_width": 1, "point_size": 5, "plotter": ["5", 0], "pyvista_geom": ["3", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+  Queuing workflow for execution...
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": true, "line_width": 5, "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: ded5e797-2071-4cd6-9d87-92425921995e
+  [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+  [ComfyUI] [32m[INFO][0m Validation result: valid=True
+  [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+  [ComfyUI] [32m[INFO][0m got prompt
+  [ComfyUI] 2026-06-06 23:50:05.367 (  87.315s) [45D909689546514C]vtkWin32OpenGLRenderWin:656    ERR| vtkWin32OpenGLRenderWindow (0000021AC4D6D320): failed to get wglChoosePixelFormatARB
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 656
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000021AC4D6D320): failed to get wglChoosePixelFormatARB
+  [ComfyUI] 2026-06-06 23:50:05.373 (  87.321s) [45D909689546514C]vtkWin32OpenGLRenderWin:731    ERR| vtkWin32OpenGLRenderWindow (0000021AC4D6D320): failed to get valid pixel format.
+  [ComfyUI] [1m[33m[WARNING][0m ERROR: In vtkWin32OpenGLRenderWindow.cxx, line 731
+  [ComfyUI] vtkWin32OpenGLRenderWindow (0000021AC4D6D320): failed to get valid pixel format.
+  [ComfyUI] 2026-06-06 23:50:05.374 (  87.322s) [45D909689546514C]vtkOpenGLRenderWindow.c:919   WARN| vtkWin32OpenGLRenderWindow (0000021AC4D6D320): Failed to initialize OpenGL functions!
+  [ComfyUI] 2026-06-06 23:50:05.376 (  87.324s) [45D909689546514C]vtkOSOpenGLRenderWindow:134   WARN| osmesa.dll not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library. You can obtain pre-built binaries for Windows from https://github.com/pal1000/mesa-dist-win. Ensure that osmesa.dll is available in PATH.
+  Node executed (2 total), capturing...
+  Frame 2 saved (frame_001.jpg, t=0.6s)
+  [capture-node] freeze=8ms shot=229ms unfreeze=8ms saved=True
+  Node executed (5 total), capturing...
+  [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.82 seconds[0m
+  Frame 3 saved (frame_002.jpg, t=1.1s)
+  [capture-node] freeze=4ms shot=211ms unfreeze=4ms saved=True
+  Node executed (6 total), capturing...
+  [capture-node] freeze=2ms shot=190ms unfreeze=0ms saved=False
+  Execution complete (t=1.7s)
+  Captured 3 unique frames over 1.87s
+  [debug] iframes: 0
+  [timing] trigger_3d_previews: 0.0s
+  Saved high-quality screenshot: extrude_executed.png
+  [timing] final_screenshot: 0.5s
+    Captured 4 video frames
