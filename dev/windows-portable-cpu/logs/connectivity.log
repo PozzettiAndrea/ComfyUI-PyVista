@@ -1,6 +1,5 @@
 Capturing execution frames: connectivity.json
   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
   [ComfyUI] [1m[31m[ERROR][0m Exception in callback _ProactorBasePipeTransport._call_connection_lost()
   [ComfyUI] handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
   [ComfyUI] Traceback (most recent call last):
