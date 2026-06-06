@@ -1,0 +1,144 @@
+Capturing execution frames: subdivide.json
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+  Frame 1 saved (frame_000.jpg, t=0.0s)
+  Validating workflow...
+  [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+  [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+  [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+  [ComfyUI] [32m[INFO][0m   Node 1: PyVistaLoadMeshio
+  [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/sphere.ply", "file_format": "auto"}
+  [ComfyUI] [32m[INFO][0m   Node 5: PyVistaSubdivide
+  [ComfyUI] [32m[INFO][0m     Inputs: {"method": "linear", "n_subdivisions": 1, "pyvista_geom": ["1", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 6: PyVistaCreatePlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+  [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
+  Validation failed: Prompt outputs failed validation
+Node errors:
+{
+  "7": {
+    "errors": [
+      {
+        "type": "invalid_input_type",
+        "message": "Failed to convert an input value to a FLOAT value",
+        "details": "line_width, false, could not convert string to float: 'false'",
+        "extra_info": {
+          "input_name": "line_width",
+          "input_config": [
+            "FLOAT",
+            {
+              "tooltip": "Line width for wireframe and edges.",
+              "default": 1,
+              "min": 0.1,
+              "max": 20,
+              "step": 0.5
+            }
+          ],
+          "received_value": "false",
+          "exception_message": "could not convert string to float: 'false'"
+        }
+      }
+    ],
+    "dependent_outputs": [
+      "9"
+    ],
+    "class_type": "PyVistaAddToPlotter"
+  },
+  "8": {
+    "errors": [
+      {
+        "type": "invalid_input_type",
+        "message": "Failed to convert an input value to a FLOAT value",
+        "details": "line_width, false, could not convert string to float: 'false'",
+        "extra_info": {
+          "input_name": "line_width",
+          "input_config": [
+            "FLOAT",
+            {
+              "tooltip": "Line width for wireframe and edges.",
+              "default": 1,
+              "min": 0.1,
+              "max": 20,
+              "step": 0.5
+            }
+          ],
+          "received_value": "false",
+          "exception_message": "could not convert string to float: 'false'"
+        }
+      }
+    ],
+    "dependent_outputs": [
+      "9"
+    ],
+    "class_type": "PyVistaAddToPlotter"
+  }
+}
+  [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
+    Status: FAILED
+    Error: Workflow validation failed
+    Details: Prompt outputs failed validation
+Node errors:
+{
+  "7": {
+    "errors": [
+      {
+        "type": "invalid_input_type",
+        "message": "Failed to convert an input value to a FLOAT value",
+        "details": "line_width, false, could not convert string to float: 'false'",
+        "extra_info": {
+          "input_name": "line_width",
+          "input_config": [
+            "FLOAT",
+            {
+              "tooltip": "Line width for wireframe and edges.",
+              "default": 1,
+              "min": 0.1,
+              "max": 20,
+              "step": 0.5
+            }
+          ],
+          "received_value": "false",
+          "exception_message": "could not convert string to float: 'false'"
+        }
+      }
+    ],
+    "dependent_outputs": [
+      "9"
+    ],
+    "class_type": "PyVistaAddToPlotter"
+  },
+  "8": {
+    "errors": [
+      {
+        "type": "invalid_input_type",
+        "message": "Failed to convert an input value to a FLOAT value",
+        "details": "line_width, false, could not convert string to float: 'false'",
+        "extra_info": {
+          "input_name": "line_width",
+          "input_config": [
+            "FLOAT",
+            {
+              "tooltip": "Line width for wireframe and edges.",
+              "default": 1,
+              "min": 0.1,
+              "max": 20,
+              "step": 0.5
+            }
+          ],
+          "received_value": "false",
+          "exception_message": "could not convert string to float: 'false'"
+        }
+      }
+    ],
+    "dependent_outputs": [
+      "9"
+    ],
+    "class_type": "PyVistaAddToPlotter"
+  }
+}
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["7", 0], "pyvista_geom": ["5", 0]}
+  [ComfyUI] [32m[INFO][0m   Node 9: PyVistaPreviewPlotter
+  [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 2aabe0fa-7b27-494c-b50b-818b3ba45d78
+  [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
