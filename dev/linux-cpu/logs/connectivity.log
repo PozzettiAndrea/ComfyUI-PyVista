@@ -1,6 +1,5 @@
 Capturing execution frames: connectivity.json
   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-  [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
   Frame 1 saved (frame_000.jpg, t=0.0s)
   Validating workflow...
   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
@@ -15,8 +14,6 @@ Capturing execution frames: connectivity.json
   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/flower_in_pot.stl", "file_format": "auto"}
   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["10", 0]}
-  [ComfyUI] [32m[INFO][0m   Node 10: PyVistaConnectivity
   Validation failed: Prompt outputs failed validation
 Node errors:
 {
@@ -77,6 +74,7 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
+  [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["10", 0]}
     Status: FAILED
     Error: Workflow validation failed
     Details: Prompt outputs failed validation
@@ -139,10 +137,11 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
+  [ComfyUI] [32m[INFO][0m   Node 10: PyVistaConnectivity
   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "extract_largest", "pyvista_geom": ["5", 0]}
   [ComfyUI] [32m[INFO][0m   Node 13: PyVistaConnectivity
   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "label", "pyvista_geom": ["5", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: 3e268b09-7ae3-4c51-8aa6-fe26b7c8a17b
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 44958ea9-000a-4343-ae89-20790f1c36c0
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:

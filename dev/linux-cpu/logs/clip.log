@@ -140,7 +140,7 @@ Node errors:
 }
   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["6", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: 4760382c-1dcd-4a56-99d6-0d9a964226f8
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 40275148-1daf-478e-98bb-f6ac444ef4ce
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 8:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 5:

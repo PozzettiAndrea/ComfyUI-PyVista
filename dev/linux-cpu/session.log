@@ -1,4 +1,4 @@
-[00:00] Crash dump logging enabled: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/comfy-test-logs/PyVista-2345/dev/linux-cpu/crash_dump.log
+[00:00] Crash dump logging enabled: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/comfy-test-logs/PyVista-2351/dev/linux-cpu/crash_dump.log
 [00:00] 
 [00:00] [1/5] SYNTAX
 [00:00] ----------------------------------------
@@ -17,152 +17,152 @@
 [00:00] 
 Setting up ComfyUI...
 [00:00] Creating virtual environment...
-[00:00] Running: uv venv /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv --python 3.10
-[00:01] torch_version='2.10.0' -> pinning torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
-[00:01] Cloning ComfyUI (latest)...
-[00:01] Running: git clone --depth 1 https://github.com/comfyanonymous/ComfyUI.git /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI
-[00:02] Pinning torch family from https://download.pytorch.org/whl/cpu: torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
-[00:02] Running: uv pip install --python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/bin/python --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple --index-strategy unsafe-best-match torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
-[00:07] Installing ComfyUI requirements...
-[00:07] Running: uv pip install --python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/bin/python --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple --index-strategy unsafe-best-match -r /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/requirements.txt
-[00:12] 
+[00:00] Running: uv venv /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv --python 3.12
+[00:00] torch_version='2.10.0' -> pinning torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
+[00:00] Cloning ComfyUI (latest)...
+[00:00] Running: git clone --depth 1 https://github.com/comfyanonymous/ComfyUI.git /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI
+[00:01] Pinning torch family from https://download.pytorch.org/whl/cpu: torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
+[00:01] Running: uv pip install --python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/bin/python --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple --index-strategy unsafe-best-match torch==2.10.0 torchvision==0.25.0 torchaudio==2.10.0
+[00:05] Installing ComfyUI requirements...
+[00:05] Running: uv pip install --python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/bin/python --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple --index-strategy unsafe-best-match -r /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/requirements.txt
+[00:10] 
 Installing custom node...
-[00:12] Copying ComfyUI-PyVista to custom_nodes/...
-[00:12] Installing node requirements...
-[00:12] Running: uv pip install --python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/bin/python --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple --index-strategy unsafe-best-match -r /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/requirements.txt
-[00:15] 
+[00:10] Copying ComfyUI-PyVista to custom_nodes/...
+[00:10] Installing node requirements...
+[00:10] Running: uv pip install --python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/bin/python --index-url https://download.pytorch.org/whl/cpu --extra-index-url https://pypi.org/simple --index-strategy unsafe-best-match -r /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/requirements.txt
+[00:14] 
 Running install.py...
-[00:15] Running: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/bin/python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/install.py
-[00:15] Warning: install.py failed (exit code 1), continuing...
-[00:15]   [!] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/bin/python: No module named pip
-[00:15]   [!] Traceback (most recent call last):
-[00:15]   [!]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/install.py", line 18, in <module>
-[00:15]   [!]     install()
-[00:15]   [!]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/install.py", line 12, in install
-[00:15]   [!]     subprocess.check_call(
-[00:15]   [!]   File "/home/runner/.local/share/uv/python/cpython-3.10-linux-x86_64-gnu/lib/python3.10/subprocess.py", line 369, in check_call
-[00:15]   [!]     raise CalledProcessError(retcode, cmd)
-[00:15]   [!] subprocess.CalledProcessError: Command '['/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/bin/python', '-m', 'pip', 'install', '-r', '/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/requirements.txt']' returned non-zero exit status 1.
-[00:15] Installing validation endpoint...
-[00:15]   Cloning PozzettiAndrea/ComfyUI-validate-endpoint...
-[00:15] Running: git clone --depth 1 https://x-access-token:***@github.com/PozzettiAndrea/ComfyUI-validate-endpoint.git /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-validate-endpoint
-[00:15] [INSTALL] PASSED
-[00:15] 
-[00:15] [3/5] REGISTRATION
-[00:15] ----------------------------------------
-[00:15] 
+[00:14] Running: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/bin/python /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/install.py
+[00:14] Warning: install.py failed (exit code 1), continuing...
+[00:14]   [!] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/bin/python: No module named pip
+[00:14]   [!] Traceback (most recent call last):
+[00:14]   [!]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/install.py", line 18, in <module>
+[00:14]   [!]     install()
+[00:14]   [!]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/install.py", line 12, in install
+[00:14]   [!]     subprocess.check_call(
+[00:14]   [!]   File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+[00:14]   [!]     raise CalledProcessError(retcode, cmd)
+[00:14]   [!] subprocess.CalledProcessError: Command '['/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/bin/python', '-m', 'pip', 'install', '-r', '/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/requirements.txt']' returned non-zero exit status 1.
+[00:14] Installing validation endpoint...
+[00:14]   Cloning PozzettiAndrea/ComfyUI-validate-endpoint...
+[00:14] Running: git clone --depth 1 https://x-access-token:***@github.com/PozzettiAndrea/ComfyUI-validate-endpoint.git /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-validate-endpoint
+[00:14] [INSTALL] PASSED
+[00:14] 
+[00:14] [3/5] REGISTRATION
+[00:14] ----------------------------------------
+[00:14] 
 [DEBUG] server=None, api=None
-[00:15] 
+[00:14] 
 Starting ComfyUI server...
-[00:15] Starting ComfyUI server on port 41882...
-[00:15] Starting ComfyUI server on port 41882...
-[00:15] Waiting for server to be ready (timeout: 600s)...
-[00:16]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.schemas
-[00:16]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.tables
-[00:16]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.types
-[00:16]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.constraints
-[00:16]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.defaults
-[00:16]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.comments
-[00:16]   [ComfyUI] [1m[33m[WARNING][0m Failed to copy viewer files: Unknown viewer: pyvista_text_report
-[00:16]   [ComfyUI] [32m[INFO][0m
-[00:16]   [ComfyUI] Prestartup times for custom nodes:
-[00:16]   [ComfyUI] [32m[INFO][0m    0.0 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista
-[00:16]   [ComfyUI] [32m[INFO][0m
-[00:22]   [ComfyUI] [32m[INFO][0m Found comfy_kitchen backend triton: {'available': False, 'disabled': True, 'unavailable_reason': "ImportError: No module named 'triton'", 'capabilities': []}
-[00:22]   [ComfyUI] [32m[INFO][0m Found comfy_kitchen backend cuda: {'available': False, 'disabled': True, 'unavailable_reason': 'CUDA not available on this system', 'capabilities': []}
+[00:14] Starting ComfyUI server on port 41887...
+[00:14] Starting ComfyUI server on port 41887...
+[00:14] Waiting for server to be ready (timeout: 600s)...
+[00:15]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.schemas
+[00:15]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.tables
+[00:15]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.types
+[00:15]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.constraints
+[00:15]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.defaults
+[00:15]   [ComfyUI] [32m[INFO][0m setup plugin alembic.autogenerate.comments
+[00:15]   [ComfyUI] [1m[33m[WARNING][0m Failed to copy viewer files: Unknown viewer: pyvista_text_report
+[00:15]   [ComfyUI] [32m[INFO][0m
+[00:15]   [ComfyUI] Prestartup times for custom nodes:
+[00:15]   [ComfyUI] [32m[INFO][0m    0.0 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista
+[00:15]   [ComfyUI] [32m[INFO][0m
 [00:22]   [ComfyUI] [32m[INFO][0m Found comfy_kitchen backend eager: {'available': True, 'disabled': False, 'unavailable_reason': None, 'capabilities': ['apply_rope', 'apply_rope1', 'apply_rope_split_half', 'apply_rope_split_half1', 'dequantize_mxfp8', 'dequantize_nvfp4', 'dequantize_per_tensor_fp8', 'gemv_awq_w4a16', 'quantize_mxfp8', 'quantize_nvfp4', 'quantize_per_tensor_fp8', 'quantize_svdquant_w4a4', 'scaled_mm_mxfp8', 'scaled_mm_nvfp4', 'scaled_mm_svdquant_w4a4', 'stochastic_rounding_fp8']}
+[00:22]   [ComfyUI] [32m[INFO][0m Found comfy_kitchen backend cuda: {'available': False, 'disabled': True, 'unavailable_reason': 'CUDA not available on this system', 'capabilities': []}
+[00:22]   [ComfyUI] [32m[INFO][0m Found comfy_kitchen backend triton: {'available': False, 'disabled': True, 'unavailable_reason': "ImportError: No module named 'triton'", 'capabilities': []}
 [00:22]   [ComfyUI] [32m[INFO][0m Checkpoint files will always be loaded safely.
 [00:22]   [ComfyUI] [32m[INFO][0m Total VRAM 15990 MB, total RAM 15990 MB
 [00:22]   [ComfyUI] [32m[INFO][0m pytorch version: 2.10.0+cpu
 [00:22]   [ComfyUI] [32m[INFO][0m Set vram state to: DISABLED
 [00:22]   [ComfyUI] [32m[INFO][0m Device: cpu
-[00:22]   [ComfyUI] [32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
-[00:26]   [ComfyUI] [32m[INFO][0m Python version: 3.10.20 (main, Jun  2 2026, 22:25:53) [Clang 22.1.3 ]
-[00:26]   [ComfyUI] [32m[INFO][0m ComfyUI version: 0.24.0
-[00:26]   [ComfyUI] [32m[INFO][0m comfy-aimdo version: 0.4.9
-[00:26]   [ComfyUI] [32m[INFO][0m comfy-kitchen version: 0.2.10
-[00:26]   [ComfyUI] [1m[33m[WARNING][0m ****** User settings have been changed to be stored on the server instead of browser storage. ******
-[00:26]   [ComfyUI] [1m[33m[WARNING][0m ****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
-[00:26]   [ComfyUI] [32m[INFO][0m comfyui-frontend-package version: 1.45.15
-[00:26]   [ComfyUI] [32m[INFO][0m comfyui-workflow-templates version: 0.9.98
-[00:26]   [ComfyUI] [32m[INFO][0m comfyui-embedded-docs version: 0.5.2
-[00:26]   [ComfyUI] [32m[INFO][0m comfy-kitchen version: 0.2.10
-[00:26]   [ComfyUI] [32m[INFO][0m comfy-aimdo version: 0.4.9
-[00:26]   [ComfyUI] [32m[INFO][0m [Prompt Server] web root: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/comfyui_frontend_package/static
-[00:26]   [ComfyUI] [32m[INFO][0m Asset seeder disabled
-[00:30]   [ComfyUI] [32m[INFO][0m Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Can not load face (unknown file format; error code 0x2)
-[00:31]   [ComfyUI] [32m[INFO][0m generated new fontManager
-[00:32]   [ComfyUI] [32m[INFO][0m Automatically register web folder web for comfyui-pyvista
-[00:32]   [ComfyUI] [32m[INFO][0m
-[00:32]   [ComfyUI] Import times for custom nodes:
-[00:32]   [ComfyUI] [32m[INFO][0m    0.0 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/websocket_image_save.py
-[00:32]   [ComfyUI] [32m[INFO][0m    0.0 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-validate-endpoint
-[00:32]   [ComfyUI] [32m[INFO][0m    2.9 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista
-[00:32]   [ComfyUI] [32m[INFO][0m
-[00:32]   [ComfyUI] [32m[INFO][0m Context impl SQLiteImpl.
-[00:32]   [ComfyUI] [32m[INFO][0m Will assume non-transactional DDL.
-[00:32]   [ComfyUI] [32m[INFO][0m Context impl SQLiteImpl.
-[00:32]   [ComfyUI] [32m[INFO][0m Will assume non-transactional DDL.
-[00:32]   [ComfyUI] [32m[INFO][0m Running upgrade  -> 0001_assets, Initial assets schema
-[00:32]   [ComfyUI] Revision ID: 0001_assets
-[00:32]   [ComfyUI] Revises: None
-[00:32]   [ComfyUI] Create Date: 2025-12-10 00:00:00
-[00:32]   [ComfyUI] [32m[INFO][0m Running upgrade 0001_assets -> 0002_merge_to_asset_references, Merge AssetInfo and AssetCacheState into unified asset_references table.
-[00:32]   [ComfyUI] [32m[INFO][0m Running upgrade 0002_merge_to_asset_references -> 0003_add_metadata_job_id, Add system_metadata and job_id columns to asset_references.
-[00:32]   [ComfyUI] Change preview_id FK from assets.id to asset_references.id.
-[00:32]   [ComfyUI] [32m[INFO][0m Database upgraded from None to 0003_add_metadata_job_id
-[00:32]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[00:32]   [ComfyUI] [32m[INFO][0m Starting server
-[00:32]   [ComfyUI] 
-[00:32]   [ComfyUI] [32m[INFO][0m To see the GUI go to: http://127.0.0.1:41882
-[00:32] Server responding, waiting for nodes to load...
-[00:52] Server is ready!
-[00:52] Checking for import errors in server logs...
-[00:52] No import errors detected
-[00:52] Found 805 registered nodes
-[00:52] [REGISTRATION] PASSED
-[00:52] 
-[00:52] [4/5] INSTANTIATION
-[00:52] ----------------------------------------
-[00:52] 
-[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x7f826d2db690>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x7f826eeb5cd0>
-[00:52] Testing node constructors...
-[00:55] All 0 node(s) instantiated successfully!
-[00:55] [INSTANTIATION] PASSED
-[00:55] 
-[00:55] [5/5] EXECUTION
-[00:55] ----------------------------------------
-[00:55] 
-[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x7f826d2db690>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x7f826eeb5cd0>
-[00:55] CPU runner - will execute 11 workflow(s)
-[00:55] Running 11 workflow(s) (all with videos)...
-[00:55] Installing screenshot dependencies (playwright, pillow)...
-[00:55]   Packages installed, downloading chromium browser...
-[01:05]   Screenshot dependencies installed successfully
-[01:06] Starting headless browser...
-[01:06]   Installing Mesa llvmpipe (apt)...
+[00:23]   [ComfyUI] [32m[INFO][0m Using sub quadratic optimization for attention, if you have memory or speed issues try using: --use-split-cross-attention
+[00:28]   [ComfyUI] [32m[INFO][0m Python version: 3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]
+[00:28]   [ComfyUI] [32m[INFO][0m ComfyUI version: 0.24.0
+[00:28]   [ComfyUI] [32m[INFO][0m comfy-aimdo version: 0.4.9
+[00:28]   [ComfyUI] [32m[INFO][0m comfy-kitchen version: 0.2.10
+[00:28]   [ComfyUI] [1m[33m[WARNING][0m ****** User settings have been changed to be stored on the server instead of browser storage. ******
+[00:28]   [ComfyUI] [1m[33m[WARNING][0m ****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+[00:28]   [ComfyUI] [32m[INFO][0m comfyui-frontend-package version: 1.45.15
+[00:28]   [ComfyUI] [32m[INFO][0m comfyui-workflow-templates version: 0.9.98
+[00:28]   [ComfyUI] [32m[INFO][0m comfyui-embedded-docs version: 0.5.2
+[00:28]   [ComfyUI] [32m[INFO][0m comfy-kitchen version: 0.2.10
+[00:28]   [ComfyUI] [32m[INFO][0m comfy-aimdo version: 0.4.9
+[00:28]   [ComfyUI] [32m[INFO][0m [Prompt Server] web root: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/comfyui_frontend_package/static
+[00:28]   [ComfyUI] [32m[INFO][0m Asset seeder disabled
+[00:32]   [ComfyUI] [32m[INFO][0m Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Can not load face (unknown file format; error code 0x2)
+[00:32]   [ComfyUI] [32m[INFO][0m generated new fontManager
+[00:33]   [ComfyUI] [32m[INFO][0m Automatically register web folder web for comfyui-pyvista
+[00:33]   [ComfyUI] [32m[INFO][0m
+[00:33]   [ComfyUI] Import times for custom nodes:
+[00:33]   [ComfyUI] [32m[INFO][0m    0.0 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/websocket_image_save.py
+[00:33]   [ComfyUI] [32m[INFO][0m    0.0 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-validate-endpoint
+[00:33]   [ComfyUI] [32m[INFO][0m    2.3 seconds: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista
+[00:33]   [ComfyUI] [32m[INFO][0m
+[00:33]   [ComfyUI] [32m[INFO][0m Context impl SQLiteImpl.
+[00:33]   [ComfyUI] [32m[INFO][0m Will assume non-transactional DDL.
+[00:33]   [ComfyUI] [32m[INFO][0m Context impl SQLiteImpl.
+[00:33]   [ComfyUI] [32m[INFO][0m Will assume non-transactional DDL.
+[00:33]   [ComfyUI] [32m[INFO][0m Running upgrade  -> 0001_assets, Initial assets schema
+[00:33]   [ComfyUI] Revision ID: 0001_assets
+[00:33]   [ComfyUI] Revises: None
+[00:33]   [ComfyUI] Create Date: 2025-12-10 00:00:00
+[00:33]   [ComfyUI] [32m[INFO][0m Running upgrade 0001_assets -> 0002_merge_to_asset_references, Merge AssetInfo and AssetCacheState into unified asset_references table.
+[00:33]   [ComfyUI] [32m[INFO][0m Running upgrade 0002_merge_to_asset_references -> 0003_add_metadata_job_id, Add system_metadata and job_id columns to asset_references.
+[00:33]   [ComfyUI] Change preview_id FK from assets.id to asset_references.id.
+[00:33]   [ComfyUI] [32m[INFO][0m Database upgraded from None to 0003_add_metadata_job_id
+[00:33]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[00:33]   [ComfyUI] [32m[INFO][0m Starting server
+[00:33]   [ComfyUI] 
+[00:33]   [ComfyUI] [32m[INFO][0m To see the GUI go to: http://127.0.0.1:41887
+[00:34] Server responding, waiting for nodes to load...
+[00:54] Server is ready!
+[00:54] Checking for import errors in server logs...
+[00:54] No import errors detected
+[00:54] Found 805 registered nodes
+[00:54] [REGISTRATION] PASSED
+[00:54] 
+[00:54] [4/5] INSTANTIATION
+[00:54] ----------------------------------------
+[00:54] 
+[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x7f649995bfd0>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x7f64985146a0>
+[00:54] Testing node constructors...
+[00:56] All 0 node(s) instantiated successfully!
+[00:56] [INSTANTIATION] PASSED
+[00:56] 
+[00:56] [5/5] EXECUTION
+[00:56] ----------------------------------------
+[00:56] 
+[DEBUG] server=<comfy_test.comfyui.server.ComfyUIServer object at 0x7f649995bfd0>, api=<comfy_test.comfyui.api.ComfyUIAPI object at 0x7f64985146a0>
+[00:56] CPU runner - will execute 11 workflow(s)
+[00:56] Running 11 workflow(s) (all with videos)...
+[00:56] Installing screenshot dependencies (playwright, pillow)...
+[00:57]   Packages installed, downloading chromium browser...
+[01:08]   Screenshot dependencies installed successfully
+[01:08] Starting headless browser...
+[01:08]   Installing Mesa llvmpipe (apt)...
 [01:19]   Mesa install failed: E: Unable to locate package libegl1-mesa
 
 [01:19]   No GPU, no Mesa -- using SwiftShader software rendering
 [01:19]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:19] Capturing execution frames: clip.json
-[01:20]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[01:27]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[01:27]   Validating workflow...
-[01:27]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
-[01:27]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
-[01:27]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
-[01:27]   [ComfyUI] [32m[INFO][0m   Node 1: PyVistaLoadMeshio
-[01:27]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/sphere.ply", "file_format": "auto"}
-[01:27]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaClip
-[01:27]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "plane", "invert": false, "normal": "x", "origin_offset": 0, "scalar_name": "", "scalar_value": 0, "pyvista_geom": ["1", 0]}
-[01:27]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaAddToPlotter
-[01:27]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["7", 0], "pyvista_geom": ["1", 0]}
-[01:27]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
-[01:27]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["5", 0], "pyvista_geom": ["2", 0]}
-[01:27]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaCreatePlotter
-[01:27]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[01:27]   Validation failed: Prompt outputs failed validation
+[01:19]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[01:26]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[01:26]   Validating workflow...
+[01:26]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+[01:26]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+[01:26]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+[01:26]   [ComfyUI] [32m[INFO][0m   Node 1: PyVistaLoadMeshio
+[01:26]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/sphere.ply", "file_format": "auto"}
+[01:26]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaClip
+[01:26]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "plane", "invert": false, "normal": "x", "origin_offset": 0, "scalar_name": "", "scalar_value": 0, "pyvista_geom": ["1", 0]}
+[01:26]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaAddToPlotter
+[01:26]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["7", 0], "pyvista_geom": ["1", 0]}
+[01:26]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
+[01:26]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["5", 0], "pyvista_geom": ["2", 0]}
+[01:26]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaCreatePlotter
+[01:26]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[01:26]   Validation failed: Prompt outputs failed validation
 Node errors:
 {
   "5": {
@@ -222,42 +222,39 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-[01:27]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
-[01:27]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["6", 0]}
-[01:27]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 4760382c-1dcd-4a56-99d6-0d9a964226f8
-[01:27]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
-[01:27]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 8:
-[01:27]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 5:
-[01:27]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:27]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 6:
-[01:27]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:27]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[01:27]   [ComfyUI] [32m[INFO][0m Validation result: valid=False
-[01:27]   [ComfyUI] [32m[INFO][0m   Error: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-[01:27]   [ComfyUI] [32m[INFO][0m   Node errors: {"5": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["8"], "class_typ
-[01:27]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
-[01:27]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[01:27]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[01:26]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
+[01:26]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["6", 0]}
+[01:26]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 40275148-1daf-478e-98bb-f6ac444ef4ce
+[01:26]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+[01:26]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 8:
+[01:26]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 5:
+[01:26]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:26]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 6:
+[01:26]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:26]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[01:26]   [ComfyUI] [32m[INFO][0m Validation result: valid=False
+[01:26]   [ComfyUI] [32m[INFO][0m   Error: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[01:26]   [ComfyUI] [32m[INFO][0m   Node errors: {"5": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["8"], "class_typ
+[01:26]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
+[01:26]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:27] Capturing execution frames: connectivity.json
-[01:28]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[01:34]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[01:34]   Validating workflow...
-[01:34]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
-[01:34]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
-[01:34]   [ComfyUI] [32m[INFO][0m Prompt has 7 nodes
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["13", 0]}
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/flower_in_pot.stl", "file_format": "auto"}
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["10", 0]}
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 10: PyVistaConnectivity
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "extract_largest", "pyvista_geom": ["5", 0]}
-[01:34]   Validation failed: Prompt outputs failed validation
+[01:27]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[01:33]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[01:33]   Validating workflow...
+[01:33]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+[01:33]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+[01:33]   [ComfyUI] [32m[INFO][0m Prompt has 7 nodes
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["13", 0]}
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/flower_in_pot.stl", "file_format": "auto"}
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["10", 0]}
+[01:33]   Validation failed: Prompt outputs failed validation
 Node errors:
 {
   "4": {
@@ -317,40 +314,42 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-[01:34]   [ComfyUI] [32m[INFO][0m   Node 13: PyVistaConnectivity
-[01:34]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "label", "pyvista_geom": ["5", 0]}
-[01:34]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 3e268b09-7ae3-4c51-8aa6-fe26b7c8a17b
-[01:34]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
-[01:34]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[01:34]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[01:34]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:34]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[01:34]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:34]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[01:34]   [ComfyUI] [32m[INFO][0m Validation result: valid=False
-[01:34]   [ComfyUI] [32m[INFO][0m   Error: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-[01:34]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
-[01:34]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
-[01:34]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 10: PyVistaConnectivity
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "extract_largest", "pyvista_geom": ["5", 0]}
+[01:33]   [ComfyUI] [32m[INFO][0m   Node 13: PyVistaConnectivity
+[01:33]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "label", "pyvista_geom": ["5", 0]}
+[01:33]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 44958ea9-000a-4343-ae89-20790f1c36c0
+[01:33]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+[01:33]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[01:33]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[01:33]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:33]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[01:33]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:33]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[01:33]   [ComfyUI] [32m[INFO][0m Validation result: valid=False
+[01:33]   [ComfyUI] [32m[INFO][0m   Error: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[01:33]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
+[01:33]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
+[01:33]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:34]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:34] Capturing execution frames: decimate.json
-[01:35]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[01:41]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[01:41]   Validating workflow...
-[01:41]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
-[01:41]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
-[01:41]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
-[01:41]   [ComfyUI] [32m[INFO][0m   Node 1: PyVistaLoadMeshio
-[01:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/nut.ply", "file_format": "auto"}
-[01:41]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
-[01:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["9", 0], "pyvista_geom": ["1", 0]}
-[01:41]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
-[01:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["12", 0]}
-[01:41]   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaCreatePlotter
-[01:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[01:41]   [ComfyUI] [32m[INFO][0m   Node 11: PyVistaPreviewPlotter
-[01:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
-[01:41]   Validation failed: Prompt outputs failed validation
+[01:34]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[01:40]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[01:40]   Validating workflow...
+[01:40]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+[01:40]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+[01:40]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+[01:40]   [ComfyUI] [32m[INFO][0m   Node 1: PyVistaLoadMeshio
+[01:40]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/nut.ply", "file_format": "auto"}
+[01:40]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
+[01:40]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["9", 0], "pyvista_geom": ["1", 0]}
+[01:40]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
+[01:40]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["12", 0]}
+[01:40]   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaCreatePlotter
+[01:40]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[01:40]   [ComfyUI] [32m[INFO][0m   Node 11: PyVistaPreviewPlotter
+[01:40]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
+[01:40]   Validation failed: Prompt outputs failed validation
 Node errors:
 {
   "6": {
@@ -410,20 +409,21 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-[01:41]   [ComfyUI] [32m[INFO][0m   Node 12: PyVistaDecimate
-[01:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"method": "decimate", "target_reduction": 0.5, "preserve_topology": true, "feature_angle": 45, "pyvista_geom": ["1", 0]}
-[01:41]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 11fcf1c1-6a78-4c30-b9b5-d7a2354087a2
-[01:41]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
-[01:41]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 11:
-[01:41]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 6:
-[01:41]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:41]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 8:
-[01:41]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:41]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[01:41]   [ComfyUI] [32m[INFO][0m Validation result: valid=False
-[01:41]   [ComfyUI] [32m[INFO][0m   Error: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-[01:41]   [ComfyUI] [32m[INFO][0m   Node errors: {"6": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["11"], "class_ty
-[01:41]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
+[01:40]   [ComfyUI] [32m[INFO][0m   Node 12: PyVistaDecimate
+[01:40]   [ComfyUI] [32m[INFO][0m     Inputs: {"method": "decimate", "target_reduction": 0.5, "preserve_topology": true, "feature_angle": 45, "pyvista_geom": ["1", 0]}
+[01:40]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 8e059cfe-6cd8-4d81-85d5-373cb6147069
+[01:40]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+[01:40]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 11:
+[01:40]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 6:
+[01:40]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:40]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 8:
+[01:40]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:40]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[01:40]   [ComfyUI] [32m[INFO][0m Validation result: valid=False
+[01:40]   [ComfyUI] [32m[INFO][0m   Error: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[01:40]   [ComfyUI] [32m[INFO][0m   Node errors: {"6": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["11"], "class_ty
+[01:40]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
+[01:40]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:41]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:41] Capturing execution frames: extrude.json
 [01:41]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
@@ -438,92 +438,92 @@ Node errors:
 [01:47]   [ComfyUI] [32m[INFO][0m     Inputs: {"shape": "Plane", "radius": 1, "height": 1, "resolution": 32, "center_x": 0, "center_y": 0, "center_z": 0}
 [01:47]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaCreatePlotter
 [01:47]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[01:47]   Queuing workflow for execution...
 [01:47]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaAddToPlotter
 [01:47]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 0.5, "show_edges": true, "line_width": 1, "point_size": 5, "plotter": ["5", 0], "pyvista_geom": ["3", 0]}
-[01:47]   Queuing workflow for execution...
 [01:47]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
 [01:47]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": true, "line_width": 5, "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
 [01:47]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaPreviewPlotter
 [01:47]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
-[01:47]   [ComfyUI] [32m[INFO][0m Generated prompt_id: f7152ab2-05ba-4f29-829a-0102a448d17d
+[01:47]   [ComfyUI] [32m[INFO][0m Generated prompt_id: e2d01bc0-a0ad-48bf-8af3-b5b2734a4f75
 [01:47]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
 [01:47]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
 [01:47]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
 [01:47]   [ComfyUI] [32m[INFO][0m got prompt
-[01:47]   [ComfyUI] 2026-06-06 23:47:37.985 (  78.520s) [    7F069A5FF6C0]vtkXOpenGLRenderWindow.:1460  WARN| bad X server connection. DISPLAY=
-[01:47]   [ComfyUI] 2026-06-06 23:47:37.989 (  78.525s) [    7F069A5FF6C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
-[01:47]   [ComfyUI] 2026-06-06 23:47:37.989 (  78.525s) [    7F069A5FF6C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
-[01:47]   [ComfyUI] 2026-06-06 23:47:37.992 (  78.528s) [    7F069A5FF6C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
-[01:47]   [ComfyUI] 2026-06-06 23:47:37.992 (  78.528s) [    7F069A5FF6C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
+[01:47]   [ComfyUI] 2026-06-06 23:52:48.804 (  76.311s) [    7F59D69236C0]vtkXOpenGLRenderWindow.:1460  WARN| bad X server connection. DISPLAY=
+[01:47]   [ComfyUI] 2026-06-06 23:52:48.805 (  76.313s) [    7F59D69236C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
+[01:47]   [ComfyUI] 2026-06-06 23:52:48.806 (  76.313s) [    7F59D69236C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
+[01:47]   [ComfyUI] 2026-06-06 23:52:48.808 (  76.315s) [    7F59D69236C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
+[01:47]   [ComfyUI] 2026-06-06 23:52:48.808 (  76.315s) [    7F59D69236C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
 [01:48]   Node executed (5 total), capturing...
-[01:48]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.58 seconds[0m
+[01:48]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.62 seconds[0m
 [01:48]   Frame 2 saved (frame_001.jpg, t=0.7s)
-[01:48]   [capture-node] freeze=2ms shot=200ms unfreeze=9ms saved=True
+[01:48]   [capture-node] freeze=2ms shot=199ms unfreeze=7ms saved=True
 [01:48]   Node executed (6 total), capturing...
-[01:49]   Frame 3 saved (frame_002.jpg, t=1.3s)
-[01:49]   [capture-node] freeze=2ms shot=196ms unfreeze=0ms saved=True
+[01:49]   Frame 3 saved (frame_002.jpg, t=1.2s)
+[01:49]   [capture-node] freeze=2ms shot=194ms unfreeze=0ms saved=True
 [01:49]   Execution complete (t=1.3s)
-[01:49]   Captured 3 unique frames over 1.58s
+[01:49]   Captured 3 unique frames over 1.57s
 [01:49]   [debug] iframes: 0
 [01:49]   [timing] trigger_3d_previews: 0.0s
 [01:51]   Saved high-quality screenshot: extrude_executed.png
 [01:51]   [timing] final_screenshot: 0.7s
-[01:51]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:52]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [01:52] Capturing execution frames: faceundloop.json
 [01:52]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[01:58]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[01:58]   Validating workflow...
-[01:58]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
-[01:58]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
-[01:58]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
-[01:58]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
-[01:58]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[01:58]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
-[01:58]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
-[01:58]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
-[01:58]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
-[01:58]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
-[01:58]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
-[01:58]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
-[01:58]   Warning: 2 node(s) have validation errors (will fail after screenshots)
-[01:58]   Queuing workflow for execution...
-[01:58]   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
-[01:58]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-[01:58]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["6", 0]}
-[01:58]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 3a2be7a6-46e9-48b0-9726-1cb9cf154b47
-[01:58]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[01:58]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
-[01:58]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
-[01:58]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
-[01:58]   [ComfyUI] [32m[INFO][0m got prompt
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[01:58]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[01:58]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/input/3d/airplane.ply (format=auto)
-[01:58]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
-[01:58]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
-[01:58]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
-[01:58]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/filters/compute_normals.py:49: PyVistaFutureWarning: The default value of `algorithm` for the filter
-[01:58]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
-[01:58]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
-[01:58]   [ComfyUI] silence this warning.
-[01:58]   [ComfyUI]   pyvista_geom = pyvista_geom.extract_surface()
-[01:58]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.03 seconds[0m
+[01:52]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[01:59]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[01:59]   Validating workflow...
+[01:59]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+[01:59]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+[01:59]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+[01:59]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
+[01:59]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[01:59]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
+[01:59]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+[01:59]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
+[01:59]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
+[01:59]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
+[01:59]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
+[01:59]   Warning: 2 node(s) have validation errors (will fail after screenshots)
+[01:59]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
+[01:59]   Queuing workflow for execution...
+[01:59]   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
+[01:59]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+[01:59]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["6", 0]}
+[01:59]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 1f4b84d4-db74-48da-8bc1-28db7538580e
+[01:59]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[01:59]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
+[01:59]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
+[01:59]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+[01:59]   [ComfyUI] [32m[INFO][0m got prompt
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[01:59]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[01:59]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/input/3d/airplane.ply (format=auto)
+[01:59]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
+[01:59]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
+[01:59]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
+[01:59]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/filters/compute_normals.py:49: PyVistaFutureWarning: The default value of `algorithm` for the filter
+[01:59]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
+[01:59]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
+[01:59]   [ComfyUI] silence this warning.
+[01:59]   [ComfyUI]   pyvista_geom = pyvista_geom.extract_surface()
+[01:59]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.03 seconds[0m
 [01:59]   Node executed (2 total), capturing...
 [01:59]   Frame 2 saved (frame_001.jpg, t=0.8s)
-[01:59]   [capture-node] freeze=3ms shot=205ms unfreeze=0ms saved=True
+[01:59]   [capture-node] freeze=2ms shot=199ms unfreeze=0ms saved=True
 [01:59]   Execution complete (t=0.8s)
-[01:59]   Captured 2 unique frames over 1.08s
+[01:59]   Captured 2 unique frames over 1.12s
 [01:59]   [debug] iframes: 0
 [01:59]   [timing] trigger_3d_previews: 0.0s
 [02:02]   Saved high-quality screenshot: faceundloop_executed.png
@@ -543,103 +543,102 @@ Node errors:
 [02:09]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
 [02:09]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
 [02:09]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 0.5, "show_edges": true, "line_width": 1, "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["5", 0]}
+[02:09]   Queuing workflow for execution...
 [02:09]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
 [02:09]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
-[02:09]   Queuing workflow for execution...
 [02:09]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
 [02:09]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "wireframe", "color": "red", "scalars": "", "opacity": 1, "show_edges": false, "line_width": 5, "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["14", 0]}
 [02:09]   [ComfyUI] [32m[INFO][0m   Node 14: PyVistaGeodesic
 [02:09]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "path", "source_vertex": 0, "target_vertex": 50, "pyvista_geom": ["5", 0]}
-[02:09]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 400fa2bf-b9ba-47ec-bbe4-26b3b445b356
+[02:09]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 05eba1a1-bb8b-4a63-9caf-39872b90eee7
 [02:09]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
 [02:09]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
 [02:09]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
 [02:09]   [ComfyUI] [32m[INFO][0m got prompt
-[02:09]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/input/3d/airplane.ply (format=auto)
+[02:09]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/input/3d/airplane.ply (format=auto)
 [02:09]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
 [02:09]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
 [02:09]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
-[02:09]   [ComfyUI] 2026-06-06 23:47:59.318 (  99.854s) [    7F069A5FF6C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
-[02:09]   [ComfyUI] 2026-06-06 23:47:59.318 (  99.854s) [    7F069A5FF6C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
-[02:09]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/spatial/geodesic.py:42: PyVistaFutureWarning: The default value of `algorithm` for the filter
+[02:09]   [ComfyUI] 2026-06-06 23:53:10.662 (  98.169s) [    7F59D69236C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
+[02:09]   [ComfyUI] 2026-06-06 23:53:10.662 (  98.170s) [    7F59D69236C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
+[02:09]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/spatial/geodesic.py:42: PyVistaFutureWarning: The default value of `algorithm` for the filter
 [02:09]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
 [02:09]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
 [02:09]   [ComfyUI] silence this warning.
 [02:09]   [ComfyUI]   pyvista_geom = pyvista_geom.extract_surface()
-[02:09]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/visualization/add_to_plotter.py:67: PyVistaFutureWarning: The default value of `algorithm` for the filter
+[02:09]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/visualization/add_to_plotter.py:67: PyVistaFutureWarning: The default value of `algorithm` for the filter
 [02:09]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
 [02:09]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
 [02:09]   [ComfyUI] silence this warning.
 [02:09]   [ComfyUI]   surf = mesh_copy.extract_surface()
 [02:09]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.10 seconds[0m
 [02:09]   Node executed (6 total), capturing...
-[02:09]   Frame 2 saved (frame_001.jpg, t=0.7s)
-[02:09]   [capture-node] freeze=2ms shot=188ms unfreeze=0ms saved=True
-[02:09]   Execution complete (t=0.7s)
-[02:09]   Captured 2 unique frames over 0.96s
-[02:09]   [debug] iframes: 0
-[02:09]   [timing] trigger_3d_previews: 0.0s
+[02:10]   Frame 2 saved (frame_001.jpg, t=0.7s)
+[02:10]   [capture-node] freeze=9ms shot=198ms unfreeze=0ms saved=True
+[02:10]   Execution complete (t=0.7s)
+[02:10]   Captured 2 unique frames over 0.99s
+[02:10]   [debug] iframes: 0
+[02:10]   [timing] trigger_3d_previews: 0.0s
 [02:12]   Saved high-quality screenshot: geodesic_executed.png
 [02:12]   [timing] final_screenshot: 0.6s
 [02:12]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:12]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:12] Capturing execution frames: plotter_dual.json
 [02:13]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:19]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[02:19]   Validating workflow...
-[02:19]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
-[02:19]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
-[02:19]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
-[02:19]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
-[02:19]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[02:19]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
-[02:19]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
-[02:19]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
-[02:19]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
-[02:19]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
-[02:19]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
-[02:19]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
-[02:19]   Warning: 2 node(s) have validation errors (will fail after screenshots)
-[02:19]   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
-[02:19]   Queuing workflow for execution...
-[02:19]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-[02:19]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["6", 0]}
-[02:19]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 440534eb-711f-4c2f-ae15-0449a25018d4
-[02:19]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[02:19]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
-[02:19]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
-[02:19]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
-[02:19]   [ComfyUI] [32m[INFO][0m got prompt
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:19]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[02:19]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/input/3d/airplane.ply (format=auto)
-[02:19]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
-[02:19]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
-[02:19]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
-[02:19]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.03 seconds[0m
-[02:19]   Node executed (2 total), capturing...
+[02:13] Capturing execution frames: plotter_dual.json
+[02:13]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:20]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[02:20]   Validating workflow...
+[02:20]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+[02:20]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+[02:20]   [ComfyUI] [32m[INFO][0m Prompt has 6 nodes
+[02:20]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
+[02:20]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[02:20]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
+[02:20]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+[02:20]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
+[02:20]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
+[02:20]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
+[02:20]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
+[02:20]   Warning: 2 node(s) have validation errors (will fail after screenshots)
+[02:20]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
+[02:20]   Queuing workflow for execution...
+[02:20]   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
+[02:20]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+[02:20]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["6", 0]}
+[02:20]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 41a0d11a-f1db-4c8b-96d7-c50f2090d3b9
+[02:20]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[02:20]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
+[02:20]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
+[02:20]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+[02:20]   [ComfyUI] [32m[INFO][0m got prompt
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:20]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[02:20]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/input/3d/airplane.ply (format=auto)
+[02:20]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
+[02:20]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
+[02:20]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
+[02:20]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.03 seconds[0m
+[02:20]   Node executed (2 total), capturing...
 [02:20]   Frame 2 saved (frame_001.jpg, t=0.8s)
-[02:20]   [capture-node] freeze=3ms shot=198ms unfreeze=0ms saved=True
+[02:20]   [capture-node] freeze=2ms shot=205ms unfreeze=0ms saved=True
 [02:20]   Execution complete (t=0.8s)
-[02:20]   Captured 2 unique frames over 1.1s
+[02:20]   Captured 2 unique frames over 1.11s
 [02:20]   [debug] iframes: 0
 [02:20]   [timing] trigger_3d_previews: 0.0s
-[02:22]   Saved high-quality screenshot: plotter_dual_executed.png
-[02:22]   [timing] final_screenshot: 0.6s
+[02:23]   Saved high-quality screenshot: plotter_dual_executed.png
+[02:23]   [timing] final_screenshot: 0.6s
 [02:23]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:23]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:23] Capturing execution frames: simple_viewer.json
-[02:23]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:30]   Frame 1 saved (frame_000.jpg, t=0.0s)
 [02:30]   Validating workflow...
 [02:30]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
@@ -649,89 +648,104 @@ Node errors:
 [02:30]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
 [02:30]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaPreview
 [02:30]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "fields", "preview_pyvista": "{\"show_edges\":false,\"camera_state\":\"\",\"camera_position\":\"{\\\"centerOfRotation\\\":[896.9955291748047,676.0221252441406,132.19440269470215],\\\"position
-[02:30]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 837ac88c-5bb6-4b62-8b23-5ee387e56ad9
+[02:30]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 39633384-32b0-443f-8de2-ce410d012c35
 [02:30]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
 [02:30]   Queuing workflow for execution...
 [02:30]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
 [02:30]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
 [02:30]   [ComfyUI] [32m[INFO][0m got prompt
-[02:30]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/input/3d/airplane.ply (format=auto)
+[02:30]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/input/3d/airplane.ply (format=auto)
 [02:30]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
 [02:30]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
 [02:30]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
-[02:30]   [ComfyUI] 2026-06-06 23:48:20.224 ( 120.760s) [    7F069A5FF6C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
-[02:30]   [ComfyUI] 2026-06-06 23:48:20.224 ( 120.760s) [    7F069A5FF6C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
-[02:30]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/visualization/preview.py:55: PyVistaFutureWarning: The default value of `algorithm` for the filter
+[02:30]   [ComfyUI] 2026-06-06 23:53:31.507 ( 119.014s) [    7F59D69236C0]vtkOpenGLRenderWindow.c:645   WARN| Failed to load EGL! Please install the EGL library from your distribution's package manager.
+[02:30]   [ComfyUI] 2026-06-06 23:53:31.507 ( 119.014s) [    7F59D69236C0]vtkOSOpenGLRenderWindow:149   WARN| libOSMesa not found. It appears that OSMesa is not installed in your system. Please install the OSMesa library from your distribution's package manager.
+[02:30]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/visualization/preview.py:55: PyVistaFutureWarning: The default value of `algorithm` for the filter
 [02:30]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
 [02:30]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
 [02:30]   [ComfyUI] silence this warning.
 [02:30]   [ComfyUI]   surf = pyvista_geom.extract_surface()
-[02:30]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/visualization/trame_manager.py:468: PyVistaFutureWarning: The default value of `algorithm` for the filter
+[02:30]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/visualization/trame_manager.py:468: PyVistaFutureWarning: The default value of `algorithm` for the filter
 [02:30]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
 [02:30]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
 [02:30]   [ComfyUI] silence this warning.
 [02:30]   [ComfyUI]   surf = mesh.extract_surface()
 [02:30]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.06 seconds[0m
+[02:30]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:30]   Node executed (2 total), capturing...
-[02:31]   Frame 2 saved (frame_001.jpg, t=0.6s)
-[02:31]   [capture-node] freeze=13ms shot=634ms unfreeze=0ms saved=True
-[02:31]   Execution complete (t=0.6s)
-[02:31]   Captured 2 unique frames over 1.39s
+[02:31]   Frame 2 saved (frame_001.jpg, t=0.7s)
+[02:31]   [capture-node] freeze=3ms shot=208ms unfreeze=10ms saved=True
+[02:31]   Execution complete (t=1.3s)
+[02:31]   Captured 2 unique frames over 1.35s
 [02:31]   [debug] iframes: 1
-[02:31]   [debug]   iframe[0]: src=http://127.0.0.1:41882/trame/index.html?ui=pv_7&reconnect=auto, canvas=486x493, rafFrozen=True
+[02:31]   [debug]   iframe[0]: src=http://127.0.0.1:41887/trame/index.html?ui=pv_7&reconnect=auto, canvas=486x493, rafFrozen=False
 [02:31]   [timing] trigger_3d_previews: 0.0s
-[02:31]   [ComfyUI] [1m[31m[ERROR][0m Exception raised
-[02:31]   [ComfyUI] [1m[31m[ERROR][0m AttributeError("'Renderer' object has no attribute '_actors'")
-[02:31]   [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/wslink/protocol.py", line 317, in onCompleteMessage
-[02:31]   [ComfyUI]     results = func(*args, **kwargs)
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/protocol.py", line 246, in update_state
-[02:31]   [ComfyUI]     with self.server.state:
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/state.py", line 469, in __exit__
-[02:31]   [ComfyUI]     self.flush()
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/state.py", line 454, in flush
-[02:31]   [ComfyUI]     keys |= self._flush_pending_keys()
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/state.py", line 434, in _flush_pending_keys
-[02:31]   [ComfyUI]     coroutine = callback(**reverse_translated_state)
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/trame/ui/base_viewer.py", line 178, in on_edge_visibility_change
-[02:31]   [ComfyUI]     for actor in renderer.actors.values():
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
-[02:31]   [ComfyUI]     return object.__getattribute__(self, item)
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/plotting/renderer.py", line 996, in actors
-[02:31]   [ComfyUI]     return dict(self._actors.items())
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
-[02:31]   [ComfyUI]     return object.__getattribute__(self, item)
-[02:31]   [ComfyUI] AttributeError: 'Renderer' object has no attribute '_actors'. Did you mean: 'actors'?
-[02:31]   [ComfyUI] 
-[02:31]   [ComfyUI] [1m[31m[ERROR][0m Exception raised
-[02:31]   [ComfyUI] [1m[31m[ERROR][0m AttributeError("'Renderer' object has no attribute '_actors'")
-[02:31]   [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/wslink/protocol.py", line 317, in onCompleteMessage
-[02:31]   [ComfyUI]     results = func(*args, **kwargs)
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/protocol.py", line 246, in update_state
-[02:31]   [ComfyUI]     with self.server.state:
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/state.py", line 469, in __exit__
-[02:31]   [ComfyUI]     self.flush()
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/state.py", line 454, in flush
-[02:31]   [ComfyUI]     keys |= self._flush_pending_keys()
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/trame_server/state.py", line 434, in _flush_pending_keys
-[02:31]   [ComfyUI]     coroutine = callback(**reverse_translated_state)
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/trame/ui/base_viewer.py", line 178, in on_edge_visibility_change
-[02:31]   [ComfyUI]     for actor in renderer.actors.values():
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
-[02:31]   [ComfyUI]     return object.__getattribute__(self, item)
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/plotting/renderer.py", line 996, in actors
-[02:31]   [ComfyUI]     return dict(self._actors.items())
-[02:31]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
-[02:31]   [ComfyUI]     return object.__getattribute__(self, item)
-[02:31]   [ComfyUI] AttributeError: 'Renderer' object has no attribute '_actors'. Did you mean: 'actors'?
-[02:31]   [ComfyUI] 
-[02:33]   Saved high-quality screenshot: simple_viewer_executed.png
-[02:33]   [timing] final_screenshot: 0.6s
-[02:34]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:32]   [ComfyUI] [1m[31m[ERROR][0m Exception raised
+[02:32]   [ComfyUI] [1m[31m[ERROR][0m AttributeError("'Renderer' object has no attribute '_actors'")
+[02:32]   [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/wslink/protocol.py", line 317, in onCompleteMessage
+[02:32]   [ComfyUI]     results = func(*args, **kwargs)
+[02:32]   [ComfyUI]               ^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/protocol.py", line 246, in update_state
+[02:32]   [ComfyUI]     with self.server.state:
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/state.py", line 469, in __exit__
+[02:32]   [ComfyUI]     self.flush()
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/state.py", line 454, in flush
+[02:32]   [ComfyUI]     keys |= self._flush_pending_keys()
+[02:32]   [ComfyUI]             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/state.py", line 434, in _flush_pending_keys
+[02:32]   [ComfyUI]     coroutine = callback(**reverse_translated_state)
+[02:32]   [ComfyUI]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/trame/ui/base_viewer.py", line 178, in on_edge_visibility_change
+[02:32]   [ComfyUI]     for actor in renderer.actors.values():
+[02:32]   [ComfyUI]                  ^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
+[02:32]   [ComfyUI]     return object.__getattribute__(self, item)
+[02:32]   [ComfyUI]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/plotting/renderer.py", line 996, in actors
+[02:32]   [ComfyUI]     return dict(self._actors.items())
+[02:32]   [ComfyUI]                 ^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
+[02:32]   [ComfyUI]     return object.__getattribute__(self, item)
+[02:32]   [ComfyUI]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI] AttributeError: 'Renderer' object has no attribute '_actors'. Did you mean: 'actors'?
+[02:32]   [ComfyUI] 
+[02:32]   [ComfyUI] [1m[31m[ERROR][0m Exception raised
+[02:32]   [ComfyUI] [1m[31m[ERROR][0m AttributeError("'Renderer' object has no attribute '_actors'")
+[02:32]   [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/wslink/protocol.py", line 317, in onCompleteMessage
+[02:32]   [ComfyUI]     results = func(*args, **kwargs)
+[02:32]   [ComfyUI]               ^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/protocol.py", line 246, in update_state
+[02:32]   [ComfyUI]     with self.server.state:
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/state.py", line 469, in __exit__
+[02:32]   [ComfyUI]     self.flush()
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/state.py", line 454, in flush
+[02:32]   [ComfyUI]     keys |= self._flush_pending_keys()
+[02:32]   [ComfyUI]             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/trame_server/state.py", line 434, in _flush_pending_keys
+[02:32]   [ComfyUI]     coroutine = callback(**reverse_translated_state)
+[02:32]   [ComfyUI]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/trame/ui/base_viewer.py", line 178, in on_edge_visibility_change
+[02:32]   [ComfyUI]     for actor in renderer.actors.values():
+[02:32]   [ComfyUI]                  ^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
+[02:32]   [ComfyUI]     return object.__getattribute__(self, item)
+[02:32]   [ComfyUI]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/plotting/renderer.py", line 996, in actors
+[02:32]   [ComfyUI]     return dict(self._actors.items())
+[02:32]   [ComfyUI]                 ^^^^^^^^^^^^
+[02:32]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/_vtk_utilities.py", line 146, in __getattribute__
+[02:32]   [ComfyUI]     return object.__getattribute__(self, item)
+[02:32]   [ComfyUI]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:32]   [ComfyUI] AttributeError: 'Renderer' object has no attribute '_actors'. Did you mean: 'actors'?
+[02:32]   [ComfyUI] 
+[02:34]   Saved high-quality screenshot: simple_viewer_executed.png
+[02:34]   [timing] final_screenshot: 0.6s
 [02:34]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:34] Capturing execution frames: subdivide.json
 [02:34]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:35]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:41]   Frame 1 saved (frame_000.jpg, t=0.0s)
 [02:41]   Validating workflow...
 [02:41]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
@@ -743,9 +757,6 @@ Node errors:
 [02:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"method": "linear", "n_subdivisions": 1, "pyvista_geom": ["1", 0]}
 [02:41]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaCreatePlotter
 [02:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[02:41]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-[02:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
-[02:41]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
 [02:41]   Validation failed: Prompt outputs failed validation
 Node errors:
 {
@@ -806,10 +817,13 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
+[02:41]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+[02:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["6", 0], "pyvista_geom": ["1", 0]}
+[02:41]   [ComfyUI] [32m[INFO][0m   Node 8: PyVistaAddToPlotter
 [02:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["7", 0], "pyvista_geom": ["5", 0]}
 [02:41]   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaPreviewPlotter
 [02:41]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["8", 0]}
-[02:41]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 2aabe0fa-7b27-494c-b50b-818b3ba45d78
+[02:41]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 8b3cb21b-7f55-4fa3-804e-ad08ab7f8ffb
 [02:41]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
 [02:41]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 9:
 [02:41]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
@@ -822,9 +836,9 @@ Node errors:
 [02:41]   [ComfyUI] [32m[INFO][0m   Node errors: {"7": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["9"], "class_typ
 [02:41]   [ComfyUI] [32m[INFO][0m === Validation FAILED ===
 [02:41]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:41]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:41] Capturing execution frames: voxelize.json
-[02:41]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:42]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:42] Capturing execution frames: voxelize.json
+[02:42]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:48]   Frame 1 saved (frame_000.jpg, t=0.0s)
 [02:48]   Validating workflow...
 [02:48]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
@@ -837,118 +851,125 @@ Node errors:
 [02:48]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
 [02:48]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "", "opacity": 0.5, "show_edges": true, "line_width": 1, "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["5", 0]}
 [02:48]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
-[02:48]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/nut.ply", "file_format": "auto"}
 [02:48]   Queuing workflow for execution...
+[02:48]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/nut.ply", "file_format": "auto"}
 [02:48]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
 [02:48]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "wireframe", "color": "red", "scalars": "", "opacity": 1, "show_edges": false, "line_width": 5, "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["15", 0]}
 [02:48]   [ComfyUI] [32m[INFO][0m   Node 15: PyVistaVoxelize
 [02:48]   [ComfyUI] [32m[INFO][0m     Inputs: {"density": 0, "check_surface": true, "pyvista_geom": ["5", 0]}
-[02:48]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 0ae9834c-bb84-42ae-be10-90aae8bdbe5e
+[02:48]   [ComfyUI] [32m[INFO][0m Generated prompt_id: aa34e9c5-0628-4392-baba-ee5416b7739e
 [02:48]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
 [02:48]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
 [02:48]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
 [02:48]   [ComfyUI] [32m[INFO][0m got prompt
-[02:48]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/input/3d/nut.ply (format=auto)
+[02:48]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/input/3d/nut.ply (format=auto)
 [02:48]   [ComfyUI] [32m[INFO][0m Loaded: nut.ply
 [02:48]   [ComfyUI] Points: 523  Cells: 1,046  Arrays: 0
 [02:48]   [ComfyUI] Bounds: x[58.342, 104.380] y[-96.373, -67.442] z[-104.380, -58.342]
-[02:48]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py:38: PyVistaFutureWarning: The default value of `algorithm` for the filter
+[02:48]   [ComfyUI] /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py:38: PyVistaFutureWarning: The default value of `algorithm` for the filter
 [02:48]   [ComfyUI] `UnstructuredGrid.extract_surface` will change in the future. It currently defaults to
 [02:48]   [ComfyUI] `'dataset_surface'`, but will change to `None`. Explicitly set the `algorithm` keyword to
 [02:48]   [ComfyUI] silence this warning.
 [02:48]   [ComfyUI]   pyvista_geom = pyvista_geom.extract_surface()
 [02:48]   [ComfyUI] [1m[31m[ERROR][0m !!! Exception during processing !!! `pyvista.voxelize` is deprecated. Use `pyvista.DataSetFilters.voxelize` instead.
 [02:48]   [ComfyUI] [1m[31m[ERROR][0m Traceback (most recent call last):
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 536, in execute
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 536, in execute
 [02:48]   [ComfyUI]     output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 336, in get_output_data
+[02:48]   [ComfyUI]                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 336, in get_output_data
 [02:48]   [ComfyUI]     return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 310, in _async_map_node_over_list
+[02:48]   [ComfyUI]                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 310, in _async_map_node_over_list
 [02:48]   [ComfyUI]     await process_inputs(input_dict, i)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 298, in process_inputs
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 298, in process_inputs
 [02:48]   [ComfyUI]     result = f(**inputs)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/comfy_api/internal/__init__.py", line 149, in wrapped_func
+[02:48]   [ComfyUI]              ^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/comfy_api/internal/__init__.py", line 149, in wrapped_func
 [02:48]   [ComfyUI]     return method(locked_class, **inputs)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/comfy_api/latest/_io.py", line 1892, in EXECUTE_NORMALIZED
+[02:48]   [ComfyUI]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/comfy_api/latest/_io.py", line 1892, in EXECUTE_NORMALIZED
 [02:48]   [ComfyUI]     to_return = cls.execute(*args, **kwargs)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py", line 41, in execute
+[02:48]   [ComfyUI]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py", line 41, in execute
 [02:48]   [ComfyUI]     result = pv.voxelize(pyvista_geom, density=d, check_surface=check_surface)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/_deprecate_positional_args.py", line 243, in inner_f
+[02:48]   [ComfyUI]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/_deprecate_positional_args.py", line 243, in inner_f
 [02:48]   [ComfyUI]     return f(*args, **kwargs)
-[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/utilities/features.py", line 161, in voxelize
+[02:48]   [ComfyUI]            ^^^^^^^^^^^^^^^^^^
+[02:48]   [ComfyUI]   File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/utilities/features.py", line 161, in voxelize
 [02:48]   [ComfyUI]     raise DeprecationError(msg)
 [02:48]   [ComfyUI] pyvista.core.errors.DeprecationError: `pyvista.voxelize` is deprecated. Use `pyvista.DataSetFilters.voxelize` instead.
 [02:48]   [ComfyUI] 
 [02:48]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.01 seconds[0m
-[02:48]   Node executed (1 total), capturing...
-[02:48]   Frame 2 saved (frame_001.jpg, t=0.6s)
-[02:48]   [capture-node] freeze=3ms shot=198ms unfreeze=0ms saved=True
-[02:48]   Execution complete (t=0.6s)
-[02:48]   Execution error: {'prompt_id': 'ce56e782-d89c-4a9a-8373-7b65337426a9', 'node_id': '15', 'node_type': 'PyVistaVoxelize', 'executed': ['5'], 'exception_message': '`pyvista.voxelize` is deprecated. Use `pyvista.DataSetFilters.voxelize` instead.\n', 'exception_type': 'pyvista.core.errors.DeprecationError', 'traceback': ['  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 536, in execute\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 336, in get_output_data\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 310, in _async_map_node_over_list\n    await process_inputs(input_dict, i)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 298, in process_inputs\n    result = f(**inputs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/comfy_api/internal/__init__.py", line 149, in wrapped_func\n    return method(locked_class, **inputs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/comfy_api/latest/_io.py", line 1892, in EXECUTE_NORMALIZED\n    to_return = cls.execute(*args, **kwargs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py", line 41, in execute\n    result = pv.voxelize(pyvista_geom, density=d, check_surface=check_surface)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/_deprecate_positional_args.py", line 243, in inner_f\n    return f(*args, **kwargs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/utilities/features.py", line 161, in voxelize\n    raise DeprecationError(msg)\n'], 'current_inputs': {'density': [0], 'check_surface': [True], 'pyvista_geom': ['UnstructuredGrid (0x7f068c381840)\n  N Cells:    1046\n  N Points:   523\n  X Bounds:   5.834e+01, 1.044e+02\n  Y Bounds:   -9.637e+01, -6.744e+01\n  Z Bounds:   -1.044e+02, -5.834e+01\n  N Arrays:   0']}, 'current_outputs': ['15', '7', '2', '4', '3', '5'], 'timestamp': 1780789718274}
-[02:48]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:49]   Node executed (1 total), capturing...
+[02:49]   Frame 2 saved (frame_001.jpg, t=0.7s)
+[02:49]   [capture-node] freeze=2ms shot=195ms unfreeze=0ms saved=True
+[02:49]   Execution complete (t=0.7s)
+[02:49]   Execution error: {'prompt_id': '782cd589-d8c4-4914-8db1-c808bbb8aabd', 'node_id': '15', 'node_type': 'PyVistaVoxelize', 'executed': ['5'], 'exception_message': '`pyvista.voxelize` is deprecated. Use `pyvista.DataSetFilters.voxelize` instead.\n', 'exception_type': 'pyvista.core.errors.DeprecationError', 'traceback': ['  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 536, in execute\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 336, in get_output_data\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 310, in _async_map_node_over_list\n    await process_inputs(input_dict, i)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 298, in process_inputs\n    result = f(**inputs)\n             ^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/comfy_api/internal/__init__.py", line 149, in wrapped_func\n    return method(locked_class, **inputs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/comfy_api/latest/_io.py", line 1892, in EXECUTE_NORMALIZED\n    to_return = cls.execute(*args, **kwargs)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py", line 41, in execute\n    result = pv.voxelize(pyvista_geom, density=d, check_surface=check_surface)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/_deprecate_positional_args.py", line 243, in inner_f\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/utilities/features.py", line 161, in voxelize\n    raise DeprecationError(msg)\n'], 'current_inputs': {'density': [0], 'check_surface': [True], 'pyvista_geom': ['UnstructuredGrid (0x7f59cc3b7400)\n  N Cells:    1046\n  N Points:   523\n  X Bounds:   5.834e+01, 1.044e+02\n  Y Bounds:   -9.637e+01, -6.744e+01\n  Z Bounds:   -1.044e+02, -5.834e+01\n  N Arrays:   0']}, 'current_outputs': ['7', '15', '5', '3', '4', '2'], 'timestamp': 1780790029827}
+[02:49]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:49]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
 [02:49] Capturing execution frames: warp.json
-[02:49]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:55]   Frame 1 saved (frame_000.jpg, t=0.0s)
-[02:55]   Validating workflow...
-[02:55]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
-[02:55]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
-[02:55]   [ComfyUI] [32m[INFO][0m Prompt has 7 nodes
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
-[02:55]   Warning: 2 node(s) have validation errors (will fail after screenshots)
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["9", 0]}
-[02:55]   Queuing workflow for execution...
-[02:55]   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaWarp
-[02:55]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "by_vector", "array_name": "Normals", "factor": 1, "pyvista_geom": ["6", 0]}
-[02:55]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 61c3efa7-1050-4ede-8857-274c6c1f6b2e
-[02:55]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[02:55]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
-[02:55]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
-[02:55]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
-[02:55]   [ComfyUI] [32m[INFO][0m got prompt
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
-[02:55]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
-[02:55]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/input/3d/airplane.ply (format=auto)
-[02:55]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
-[02:55]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
-[02:55]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
-[02:55]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.02 seconds[0m
+[02:50]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
+[02:56]   Frame 1 saved (frame_000.jpg, t=0.0s)
+[02:56]   Validating workflow...
+[02:56]   [ComfyUI] [32m[INFO][0m === /validate endpoint called ===
+[02:56]   [ComfyUI] [32m[INFO][0m Received JSON with keys: ['prompt']
+[02:56]   [ComfyUI] [32m[INFO][0m Prompt has 7 nodes
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 2: PyVistaCreatePlotter
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"grid": "1x2", "background": "white", "link_views": "false"}
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 3: PyVistaPreviewPlotter
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"plotter": ["7", 0]}
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 4: PyVistaAddToPlotter
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 0, "style": "surface", "color": "", "scalars": "normals_x", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["2", 0], "pyvista_geom": ["6", 0]}
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 5: PyVistaLoadMeshio
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"file_path": "3d/airplane.ply", "file_format": "auto"}
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 6: PyVistaComputeNormals
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"cell_normals": true, "point_normals": true, "flip_normals": false, "consistent_normals": true, "split_vertices": false, "feature_angle": 30, "pyvista_geom": ["5", 0]}
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 7: PyVistaAddToPlotter
+[02:56]   Warning: 2 node(s) have validation errors (will fail after screenshots)
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"row": 0, "col": 1, "style": "surface", "color": "", "scalars": "normals_z", "opacity": 1, "show_edges": false, "line_width": "false", "point_size": 5, "plotter": ["4", 0], "pyvista_geom": ["9", 0]}
+[02:56]   [ComfyUI] [32m[INFO][0m   Node 9: PyVistaWarp
+[02:56]   Queuing workflow for execution...
+[02:56]   [ComfyUI] [32m[INFO][0m     Inputs: {"mode": "by_vector", "array_name": "Normals", "factor": 1, "pyvista_geom": ["6", 0]}
+[02:56]   [ComfyUI] [32m[INFO][0m Generated prompt_id: 13b5190e-2dfb-48d6-bae5-9b64ed0ebec2
+[02:56]   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[02:56]   [ComfyUI] [32m[INFO][0m Validation result: valid=True
+[02:56]   [ComfyUI] [32m[INFO][0m   Node errors: {"4": {"errors": [{"type": "invalid_input_type", "message": "Failed to convert an input value to a FLOAT value", "details": "line_width, false, could not convert string to float: 'false'", "extra_info": {"input_name": "line_width", "input_config": ["FLOAT", {"tooltip": "Line width for wireframe and edges.", "default": 1.0, "min": 0.1, "max": 20.0, "step": 0.5}], "received_value": "false", "exception_message": "could not convert string to float: 'false'"}}], "dependent_outputs": ["3"], "class_typ
+[02:56]   [ComfyUI] [32m[INFO][0m === Validation PASSED ===
+[02:56]   [ComfyUI] [32m[INFO][0m got prompt
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 3:
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 4:
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 7:
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m   - Failed to convert an input value to a FLOAT value: line_width, false, could not convert string to float: 'false'
+[02:56]   [ComfyUI] [1m[31m[ERROR][0m Output will be ignored
+[02:56]   [ComfyUI] [32m[INFO][0m Loading /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/input/3d/airplane.ply (format=auto)
+[02:56]   [ComfyUI] [32m[INFO][0m Loaded: airplane.ply
+[02:56]   [ComfyUI] Points: 1,335  Cells: 2,452  Arrays: 0
+[02:56]   [ComfyUI] Bounds: x[139.061, 1654.930] y[32.094, 1319.950] z[-17.741, 282.130]
+[02:56]   [ComfyUI] [32m[INFO][0m [32mPrompt executed in 0.02 seconds[0m
 [02:56]   Node executed (2 total), capturing...
-[02:56]   Frame 2 saved (frame_001.jpg, t=0.8s)
-[02:56]   [capture-node] freeze=4ms shot=187ms unfreeze=0ms saved=True
-[02:56]   Execution complete (t=0.8s)
-[02:56]   Captured 2 unique frames over 1.07s
-[02:56]   [debug] iframes: 0
-[02:56]   [timing] trigger_3d_previews: 0.0s
+[02:57]   Frame 2 saved (frame_001.jpg, t=0.8s)
+[02:57]   [capture-node] freeze=2ms shot=191ms unfreeze=0ms saved=True
+[02:57]   Execution complete (t=0.8s)
+[02:57]   Captured 2 unique frames over 1.07s
+[02:57]   [debug] iframes: 0
+[02:57]   [timing] trigger_3d_previews: 0.0s
 [02:59]   Saved high-quality screenshot: warp_executed.png
 [02:59]   [timing] final_screenshot: 0.6s
 [02:59]   [ComfyUI] [32m[INFO][0m Using RAM pressure cache.
-[02:59] Results saved to /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/comfy-test-logs/PyVista-2345/dev/linux-cpu/results.json
-[02:59] Saved: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/comfy-test-logs/PyVista-2345/dev/linux-cpu/index.html
-[02:59] 
+[03:00] Results saved to /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/comfy-test-logs/PyVista-2351/dev/linux-cpu/results.json
+[03:00] Saved: /home/runner/work/comfy-gpu-ci/comfy-gpu-ci/comfy-test-logs/PyVista-2351/dev/linux-cpu/index.html
+[03:00] 
 linux: FAILED
-[02:59] Error: Workflow execution failed (8 error(s))
-[02:59] Details: clip.json: Workflow validation failed
+[03:00] Error: Workflow execution failed (8 error(s))
+[03:00] Details: clip.json: Workflow validation failed
 
 Details:
 Prompt outputs failed validation
@@ -1140,11 +1161,11 @@ Node errors:
 faceundloop.json: 2 node(s) had validation errors and were silently skipped: node 4: line_width, false, could not convert string to float: 'false'; node 7: line_width, false, could not convert string to float: 'false'
 
 Details:
-Workflow: /tmp/comfy-test-run-2gqi0768/ComfyUI-PyVista/workflows/faceundloop.json
+Workflow: /tmp/comfy-test-run-9oo8w4v7/ComfyUI-PyVista/workflows/faceundloop.json
 plotter_dual.json: 2 node(s) had validation errors and were silently skipped: node 4: line_width, false, could not convert string to float: 'false'; node 7: line_width, false, could not convert string to float: 'false'
 
 Details:
-Workflow: /tmp/comfy-test-run-2gqi0768/ComfyUI-PyVista/workflows/plotter_dual.json
+Workflow: /tmp/comfy-test-run-9oo8w4v7/ComfyUI-PyVista/workflows/plotter_dual.json
 subdivide.json: Workflow validation failed
 
 Details:
@@ -1208,13 +1229,13 @@ Node errors:
     "class_type": "PyVistaAddToPlotter"
   }
 }
-voxelize.json: Workflow execution failed: {'prompt_id': 'ce56e782-d89c-4a9a-8373-7b65337426a9', 'node_id': '15', 'node_type': 'PyVistaVoxelize', 'executed': ['5'], 'exception_message': '`pyvista.voxelize` is deprecated. Use `pyvista.DataSetFilters.voxelize` instead.\n', 'exception_type': 'pyvista.core.errors.DeprecationError', 'traceback': ['  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 536, in execute\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 336, in get_output_data\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 310, in _async_map_node_over_list\n    await process_inputs(input_dict, i)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/execution.py", line 298, in process_inputs\n    result = f(**inputs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/comfy_api/internal/__init__.py", line 149, in wrapped_func\n    return method(locked_class, **inputs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/comfy_api/latest/_io.py", line 1892, in EXECUTE_NORMALIZED\n    to_return = cls.execute(*args, **kwargs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py", line 41, in execute\n    result = pv.voxelize(pyvista_geom, density=d, check_surface=check_surface)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/_deprecate_positional_args.py", line 243, in inner_f\n    return f(*args, **kwargs)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2345/.venv/lib/python3.10/site-packages/pyvista/core/utilities/features.py", line 161, in voxelize\n    raise DeprecationError(msg)\n'], 'current_inputs': {'density': [0], 'check_surface': [True], 'pyvista_geom': ['UnstructuredGrid (0x7f068c381840)\n  N Cells:    1046\n  N Points:   523\n  X Bounds:   5.834e+01, 1.044e+02\n  Y Bounds:   -9.637e+01, -6.744e+01\n  Z Bounds:   -1.044e+02, -5.834e+01\n  N Arrays:   0']}, 'current_outputs': ['15', '7', '2', '4', '3', '5'], 'timestamp': 1780789718274}
+voxelize.json: Workflow execution failed: {'prompt_id': '782cd589-d8c4-4914-8db1-c808bbb8aabd', 'node_id': '15', 'node_type': 'PyVistaVoxelize', 'executed': ['5'], 'exception_message': '`pyvista.voxelize` is deprecated. Use `pyvista.DataSetFilters.voxelize` instead.\n', 'exception_type': 'pyvista.core.errors.DeprecationError', 'traceback': ['  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 536, in execute\n    output_data, output_ui, has_subgraph, has_pending_tasks = await get_output_data(prompt_id, unique_id, obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 336, in get_output_data\n    return_values = await _async_map_node_over_list(prompt_id, unique_id, obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb, v3_data=v3_data)\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 310, in _async_map_node_over_list\n    await process_inputs(input_dict, i)\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/execution.py", line 298, in process_inputs\n    result = f(**inputs)\n             ^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/comfy_api/internal/__init__.py", line 149, in wrapped_func\n    return method(locked_class, **inputs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/comfy_api/latest/_io.py", line 1892, in EXECUTE_NORMALIZED\n    to_return = cls.execute(*args, **kwargs)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/ComfyUI/custom_nodes/ComfyUI-PyVista/nodes/voxel/voxelize.py", line 41, in execute\n    result = pv.voxelize(pyvista_geom, density=d, check_surface=check_surface)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/_deprecate_positional_args.py", line 243, in inner_f\n    return f(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^\n', '  File "/home/runner/work/comfy-gpu-ci/comfy-gpu-ci/test_workspaces/PyVista-2351/.venv/lib/python3.12/site-packages/pyvista/core/utilities/features.py", line 161, in voxelize\n    raise DeprecationError(msg)\n'], 'current_inputs': {'density': [0], 'check_surface': [True], 'pyvista_geom': ['UnstructuredGrid (0x7f59cc3b7400)\n  N Cells:    1046\n  N Points:   523\n  X Bounds:   5.834e+01, 1.044e+02\n  Y Bounds:   -9.637e+01, -6.744e+01\n  Z Bounds:   -1.044e+02, -5.834e+01\n  N Arrays:   0']}, 'current_outputs': ['7', '15', '5', '3', '4', '2'], 'timestamp': 1780790029827}
 
 Details:
-Workflow: /tmp/comfy-test-run-2gqi0768/ComfyUI-PyVista/workflows/voxelize.json
+Workflow: /tmp/comfy-test-run-9oo8w4v7/ComfyUI-PyVista/workflows/voxelize.json
 Node error: PyVistaVoxelize
 warp.json: 2 node(s) had validation errors and were silently skipped: node 4: line_width, false, could not convert string to float: 'false'; node 7: line_width, false, could not convert string to float: 'false'
 
 Details:
-Workflow: /tmp/comfy-test-run-2gqi0768/ComfyUI-PyVista/workflows/warp.json
-[02:59] Stopping ComfyUI server...
+Workflow: /tmp/comfy-test-run-9oo8w4v7/ComfyUI-PyVista/workflows/warp.json
+[03:00] Stopping ComfyUI server...

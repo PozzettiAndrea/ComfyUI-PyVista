@@ -140,7 +140,7 @@ Node errors:
 }
   [ComfyUI] [32m[INFO][0m   Node 12: PyVistaDecimate
   [ComfyUI] [32m[INFO][0m     Inputs: {"method": "decimate", "target_reduction": 0.5, "preserve_topology": true, "feature_angle": 45, "pyvista_geom": ["1", 0]}
-  [ComfyUI] [32m[INFO][0m Generated prompt_id: 11fcf1c1-6a78-4c30-b9b5-d7a2354087a2
+  [ComfyUI] [32m[INFO][0m Generated prompt_id: 8e059cfe-6cd8-4d81-85d5-373cb6147069
   [ComfyUI] [32m[INFO][0m Calling execution.validate_prompt()...
   [ComfyUI] [1m[31m[ERROR][0m Failed to validate prompt for output 11:
   [ComfyUI] [1m[31m[ERROR][0m * PyVistaAddToPlotter 6:
