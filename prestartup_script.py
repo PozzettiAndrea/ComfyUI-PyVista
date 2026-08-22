@@ -1,15 +1,21 @@
-"""ComfyUI-PyVista prestartup script — copies assets and viewer files."""
+"""ComfyUI-PyVista prestartup script -- seeds bundled assets into input/3d.
 
-import logging
+The viewer JavaScript is vendored under javascript/ and served from there;
+it is no longer fetched from comfy-3d-viewers at startup.
+"""
+
 import shutil
 from pathlib import Path
 
-log = logging.getLogger("comfyui-pyvista")
+import folder_paths
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-COMFYUI_DIR = SCRIPT_DIR.parent.parent
 ASSETS_DIR = SCRIPT_DIR / "assets"
-INPUT_DIR = COMFYUI_DIR / "input"
+
+# The CONFIGURED input directory, never the code-tree one: ComfyUI Desktop
+# (--base-directory) and --input-directory both relocate it, and the load
+# nodes only ever scan folder_paths.get_input_directory().
+INPUT_DIR = Path(folder_paths.get_input_directory())
 
 
 def copy_assets():
@@ -25,17 +31,4 @@ def copy_assets():
                 shutil.copy2(src_file, dst_file)
 
 
-def copy_viewers():
-    """Copy VTK.js viewer infrastructure from comfy-3d-viewers."""
-    try:
-        from comfy_3d_viewers import copy_viewer
-        copy_viewer("pyvista", SCRIPT_DIR / "web")
-        copy_viewer("pyvista_text_report", SCRIPT_DIR / "web")
-    except ImportError:
-        log.warning("comfy-3d-viewers not installed, 3D preview will not work")
-    except Exception as e:
-        log.warning("Failed to copy viewer files: %s", e)
-
-
 copy_assets()
-copy_viewers()
